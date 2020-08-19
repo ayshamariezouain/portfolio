@@ -1,0 +1,635 @@
+
+%%=ContentBlockbyId("37281")=%%
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting"> <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <meta name="format-detection" content="telephone=no"> <!-- Disable telephone entirely -->
+    <meta name="format-detection" content="date=no"><!-- Disable date entirely -->
+    <meta name="format-detection" content="address=no"> <!-- Disable address entirely -->
+    <meta name="format-detection" content="email=no"> <!-- Disable email styling entirely -->
+    <title>%%=v(@subjectline)=%%</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely removed. -->
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+        <style>
+            * {
+                font-family: Arial, sans-serif !important;
+            }
+        </style>
+    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+   
+    <!--<![endif]-->
+    <!-- Web Font / @font-face : END -->
+    <!-- CSS Reset : BEGIN -->
+      <style>
+      @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700');
+      @font-face {
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: 400,700;
+      src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v13/4iCs6KVjbNBYlgoKcg72nU6AF7xm.woff2) format('woff2');
+}
+      }
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+            text-decoration: none !important;
+        }
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+        /* What it does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+        /* What it does: Fixes webkit padding issue. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+        /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+        a {
+            text-decoration: none;
+        }
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode:bicubic;
+        }
+        /*mso-font-alt: "Arial";*/
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        a[x-apple-data-detectors],  /* iOS */
+        .unstyle-auto-detected-links a,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+        /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+        .im {
+            color: inherit !important;
+        }
+        /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+        .a6S {
+           display: none !important;
+           opacity: 0.01 !important;
+  }
+
+  /* If the above doesn't work, add a .g-img class to any image in question. */
+  img.g-img + div {
+     display: none !important;
+  }
+        /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport size you'd like to fix */
+        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            u ~ div .email-container {
+                min-width: 320px !important;
+            }
+        }
+        /* iPhone 6, 6S, 7, 8, and X */
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            u ~ div .email-container {
+                min-width: 375px !important;
+            }
+        }
+        /* iPhone 6+, 7+, and 8+ */
+        @media only screen and (min-device-width: 414px) {
+            u ~ div .email-container {
+                min-width: 414px !important;
+            }
+           
+      .logo {
+      width: 120px !important
+      }
+      #HeaderMenu {
+      display: none
+      } 
+      .full {
+        display: block !important;
+        width: 100% !important;
+        }
+        .mobCenter {
+        margin: 0 auto !important;
+        text-align: center !important;
+        }
+        .padTop40 {
+        padding-top: 400px !important;
+        }
+    </style>
+
+    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+
+    <!-- CSS Reset : END -->
+
+    <!-- Progressive Enhancements : BEGIN -->
+    <style>
+        /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+     .button-td-primary:hover,
+     .button-a-primary:hover {
+         background: #091540 !important;
+         border-color: #091540 !important;
+     }
+        /* Media Queries */
+        @media screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+                margin: auto !important;
+            }
+            /* What it does: Forces table cells into full-width rows. */
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+            /* And center justify these ones. */
+            .stack-column-center {
+                text-align: center !important;
+            }
+            /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+            /* What it does: Adjust typography on small screens to improve readability */
+            .email-container p {
+                font-size: 17px !important;
+            }
+          /* What it does: Adjust typography on FOOOTER in small screens to improve readability */
+            .email-container-footer p {
+                font-size: 12px !important;
+            }
+        }
+    </style>
+    <!-- Progressive Enhancements : END -->
+
+</head>
+<!--
+ The email background color (#222222) is defined in three places:
+ 1. body tag: for most email clients
+ 2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
+ 3. mso conditional: For Windows 10 Mail
+-->
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #FFFFFF;">
+ <center style="width: 100%; background-color: #ffffff;">
+    <!--[if mso | IE]>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #FFFFFF;">
+    <tr>
+    <td>
+    <![endif]-->
+
+        <!-- Visually Hidden Preheader Text : BEGIN -->
+        <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: 'Ubuntu',Helvetica,Arial,sans-serif;">
+            Thanks for Joining Rent.com - You obviously have great taste in websites, so we’re sure you have an equally good eye for places to call home. All you need to do now is sit back and use our simple search tools to find the perfect new place. You can search by map, see available units, view the virtual 3D models and save properties.
+        </div>
+        <!-- Visually Hidden Preheader Text : END -->
+
+        <!-- Create white space after the desired preview text so email clients don’t pull other distracting text into the inbox preview. Extend as necessary. -->
+        <!-- Preview Text Spacing Hack : BEGIN -->
+        <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: 'Ubuntu',Helvetica,Arial,sans-serif;">
+         &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+        </div>
+        <!-- Preview Text Spacing Hack : END -->
+
+        <!-- Email Body : BEGIN -->
+        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: auto;" class="email-container">
+        <!--  Email Header - 3 Even Columns : BEGIN -->
+         <tr>
+             <td style="padding: 10px; background-color: #003bde;">
+                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                     <tr>
+                         <!-- Column : BEGIN -->
+                         <td valign="top" width="33.33%" class="stack-column-center">
+                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                 <tr>
+                                     <td style="padding: 2px 0; text-align: left; background-color: #003bde;r"><!-- Start Rent Logo -->
+                                        <a href="https://www.rent.com/" target="_blank"><img src="http://image.email.rent.com/lib/fe9012727663057476/m/1/78bd11da-da6e-40e8-a128-3d1406889818.png" width="180" height="52" alt="rent.com" border="0" style="width: 100%; max-width: 170px; height: auto; background: #dddddd; font-family: 'Ubuntu',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 15px; color: #003bde;"></a><!-- Start Rent Logo -->
+                                     </td>
+                                 </tr>
+                                 <tr>
+                                     <td style="font-family: 'Ubuntu',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 20px; color: #FFFFFF; padding: 0 10px 10px; text-align: left;" class="center-on-narrow">
+                                        
+                                     </td>
+                                 </tr>
+                             </table>
+                         </td>
+                         <!-- Column : END -->
+                         <!-- Column : BEGIN -->
+                         <td valign="top" width="33.33%" class="stack-column-center">
+                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                 <tr>
+                                     <td style="padding: 10px; text-align: center">
+                                     </td>
+                                 </tr>
+                                 <tr>
+                                     <td style="font-family: 'Ubuntu',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 20px; color: #FFFFFF; padding: 0 10px 10px; text-align: right;" class="center-on-narrow">
+                                     </td>
+                                 </tr>
+                             </table>
+                         </td>
+                         <!-- Column : END -->
+                         <!-- Column : BEGIN -->
+                         <td valign="top" width="33.33%" class="stack-column-center">
+                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                 <tr>
+                                     <td style="padding: 10px; text-align: center">
+                                     </td>
+                                 </tr>
+                                 <tr>
+                                     <td style="font-family: 'Ubuntu',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 20px; color: #FFFFFF; padding: 0 10px 10px; text-align: right;" class="center-on-narrow">
+                                       <p style="margin: 0;"><a href="https://www.rent.com/account/myrent" style="font-size: 17px; line-height: 24px; text-decoration:none; color:#FFFFFF;">My Rent</a>&nbsp;&nbsp;&nbsp;<a href="https://www.rent.com/" style="font-size: 17px; line-height: 24px; text-decoration:none; color:#FFFFFF;">Search</a></p>
+                                     </td>
+                                 </tr>
+                             </table>
+                         </td>
+                         <!-- Column : END -->
+                     </tr>
+                 </table>
+             </td>
+         </tr>
+         <!-- 3 Even Columns : END -->
+
+            <!-- Hero Image, Flush : BEGIN -->
+            <tr>
+                <td style="background-color: #ffffff;">
+                      <a href="https://www.rent.com/account/myrent" target="_blank"><img src="http://image.email.rent.com/lib/fe9012727663057476/m/1/002f2a8c-ea9e-4c38-8e9e-4b628ec7b1cd.png" width="600" height="" alt="Thanks for Joining Rent.com - There are millions of homes out there. Let's find the one that's perfect for you." border="0" style="width: 100%; max-width: 600px; height: auto; background: #dddddd; font-family: 'Ubuntu', Arial,sans-serif; font-size: 15px; line-height: 15px; color: #555555; margin: auto; display: block;" class="g-img"></a>
+                </td>
+            </tr>
+            <!-- Hero Image, Flush : END -->
+
+            <!-- MAIN WELCOME CTA 1 Column Text + Button : BEGIN -->
+            <tr>
+                <td style="background-color: #FFFFFF;">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td align="center" td style="padding: 30px; font-family: 'Ubuntu',Helvetica,Arial,sans-serif; font-size: 17px; line-height: 24px; color: #555555;">
+                               <h1 style="margin: 0 0 10px; font-size: 25px; line-height: 30px; color: #091540; font-weight: bold; text-decoration: none;">Thanks for Joining <a href="https://www.rent.com" target="_blank" style="color: #091540; text-decoration: none;"> Rent.com</a></h1>
+                                <p style="margin: 20px 40px 28px; line-height: 28px;"> You obviously have great taste in websites, so we’re sure you have an equally good eye for places to call home. All you need to do now is sit back and use our simple search tools to find the perfect new place.</p>             
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0px 0px 50px;">
+                                <!-- Button : BEGIN -->
+                                <table align="center" role="presentation" cellspacing="10" cellpadding="0" border="0" style="margin: auto;">
+                                    <tr>
+                                           <td class="button-td button-td-primary" style="border-radius: 7px; background: #003bde;">
+           <a class="button-a button-a-primary" href="https://www.rent.com/" style="background: #003bde; border: 1px solid #003bde; font-family: 'Ubuntu',Helvetica,Arial,sans-serif; font-size: 17px; line-height: 19px; text-decoration: none; padding: 16px 44px; color: #ffffff; display: block; border-radius: 7px;">Get Started</a>
+          </td>
+                                    </tr>
+                                </table>
+                                <!-- Button : END -->
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+         <!-- MAIN WELCOME CTA 1 Column Text + Button : END -->
+
+         <!-- Thumbnail Right, Text Left : BEGIN -->
+         <tr>
+             <td dir="rtl" width="100%" style="padding: 0px; background-color: #f3f3f3;">
+                 <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tr>
+                         <!-- Column : BEGIN -->
+                         <td width="50%" class="stack-column-center">
+                             <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                     <td style="padding: 0px; text-align: center">
+                                       <a href="https://www.rent.com/" target="_blank" style="text-decoration:none;"><img src="http://image.email.rent.com/lib/fe9012727663057476/m/1/5439a360-578a-474a-907a-520f0aef848c.jpg" width="320" height="" alt="With Rent.com - You can search by map" border="0" style="width: 100%; max-width: 320px; height: auto; background: #dddddd; font-family: 'Ubuntu',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 15px; color: #555555;"></a>
+                                     </td>
+                                 </tr>
+                             </table>
+                         </td>
+                         <!-- Column : END -->
+                         <!-- Column : BEGIN -->
+                         <td width="50%" class="stack-column-center">
+                             <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                 <tr>
+                                     <td dir="ltr" valign="top" style="font-family: 'Ubuntu',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 30px; color: #555555; padding: 0px 20px 10px; text-align: left;" class="center-on-narrow">
+                                       <h1 style="margin: 23px 0 24px; font-size: 55px; line-height: 30px; color: #091540; font-weight: bold;"><img src="http://image.email.rent.com/lib/fe9012727663057476/m/1/18d2bac3-f39a-4d4a-8de1-d78aabe2281a.jpg" width="40" height="40" alt="Search by Map icon"></h1>
+                                          <h2 style="margin: 10px 0px 24px; font-family: 'Ubuntu',Helvetica,Arial,sans-serif; font-size: 25px; line-height: 20px; color: #091540; font-weight: bold;">Search by Map</h2>
+                                         <p style="margin: 10px 0 24px; line-height: 30px; color: #4a4a4a;">Rent.com simplifies search so you can focus on what's important - finding the place that's right for you that fits your budget.</p><br>
+                                     </td>
+                                 </tr>
+                             </table>
+                         </td>
+                         <!-- Column : END -->
+                     </tr>
+                 </table>
+             </td>
+         </tr>
+         <!-- Thumbnail Right, Text Left : END -->
+          
+           <!-- Thumbnail Left, Text Right : BEGIN -->
+         <tr>
+             <td dir="ltr" width="100%" style="padding: 0px; background-color: #f3f3f3;">
+                 <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tr>
+                         <!-- Column : BEGIN -->
+                         <td width="50%" class="stack-column-center">
+                             <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                 <tr>
+                                     <td style="padding: 0px; text-align: center">
+                                       <a href="https://www.rent.com/" target="_blank" style="text-decoration:none;"><img src="http://image.email.rent.com/lib/fe9012727663057476/m/1/b58f2e38-c757-4227-971f-6447d688653d.jpg" width="320" height="" alt="With Rent.com - You can search by map" border="0" style="width: 100%; max-width: 320px; height: auto; background: #dddddd; font-family: 'Ubuntu',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 15px; color: #555555;"></a>
+                                     </td>
+                                 </tr>
+                             </table>
+                         </td>
+                         <!-- Column : END -->
+                         <!-- Column : BEGIN -->
+                         <td width="50%" class="stack-column-center">
+                             <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                 <tr>
+                                     <td dir="ltr" valign="top" style="font-family: 'Ubuntu',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0px 20px 10px; text-align: left;" class="center-on-narrow">
+                                          <h1 style="margin: 23px 0 24px; font-size: 55px; line-height: 30px; color: #091540; font-weight: bold;"><img src="http://image.email.rent.com/lib/fe9012727663057476/m/1/03e6c044-564b-4328-bcb9-6dbfa2b65ebb.jpg" width="40" height="40" alt="Available Units icon"></h1>
+                                         <h1 style="margin: 10px 0px 24px; font-size: 25px; line-height: 20px; color: #091540; font-weight: bold;">Available Units</h1>
+                                       <p style="margin: 10px 0 24px; line-height: 30px; color: #4a4a4a;">You can even use Rent.com to locate the number of units that are available, allowing you to act fast if needed.</p><br>
+                                     
+                                     </td>
+                                 </tr>
+                             </table>
+                         </td>
+                         <!-- Column : END -->
+                     </tr>
+                 </table>
+             </td>
+         </tr>
+         <!-- Thumbnail Left, Text Right : END -->
+
+        
+         <!-- Thumbnail Right, Text Left : BEGIN -->
+         <tr>
+             <td dir="rtl" width="100%" style="padding: 0px; background-color: #f3f3f3;">
+                 <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tr>
+                         <!-- Column : BEGIN -->
+                         <td width="50%" class="stack-column-center">
+                             <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                     <td style="padding: 0px; text-align: center">
+                                       <a href="https://www.rent.com/" target="_blank" style="text-decoration:none;"><img src="http://image.email.rent.com/lib/fe9012727663057476/m/1/8efb7943-4d6d-4889-b900-41ba98b918be.jpg" width="320" height="" alt="With Rent.com - You can see 3D floor maps" border="0" style="width: 100%; max-width: 320px; height: auto; background: #dddddd; font-family: 'Ubuntu',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 15px; color: #555555;"></a>
+                                     </td>
+                                 </tr>
+                             </table>
+                         </td>
+                         <!-- Column : END -->
+                         <!-- Column : BEGIN -->
+                         <td width="50%" class="stack-column-center">
+                             <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                 <tr>
+                                     <td dir="ltr" valign="top" style="font-family: 'Ubuntu',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 0px 20px 10px; text-align: left;" class="center-on-narrow">
+                                       <h1 style="margin: 23px 0 24px; font-size: 55px; line-height: 30px; color: #091540; font-weight:bold;"><img src="http://image.email.rent.com/lib/fe9012727663057476/m/1/86731c51-2aee-4f32-9655-477c03b04b6c.jpg" width="40" height="40" alt="3D Floor icon"></h1>
+                                          <h2 style="margin: 10px 0 24px; font-family: 'Ubuntu',Helvetica,Arial,sans-serif; font-size: 25px; line-height: 20px; color: #091540; font-weight: bold;">3D Floor</h2>
+                                         <p style="margin: 10px 0 24px; line-height: 30px; color: #4a4a4a;">View the virtual 3D models of the interior, and choose the unit that best suits you. We're all about saving you time.</p><br><br>
+                                     </td>
+                                 </tr>
+                             </table>
+                         </td>
+                         <!-- Column : END -->
+                     </tr>
+                 </table>
+             </td>
+         </tr>
+         <!-- Thumbnail Right, Text Left : END -->
+          
+          <!-- Thumbnail Left, Text Right : BEGIN -->
+         <tr>
+             <td dir="ltr" width="100%" style="padding: 0px; background-color: #f3f3f3;">
+                 <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                     <tr>
+                         <!-- Column : BEGIN -->
+                         <td width="50%" class="stack-column-center">
+                             <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                 <tr>
+                                     <td style="padding: 0px; text-align: center">
+                                       <a href="https://www.rent.com/account/myrent/" target="_blank" style="text-decoration:none;"><img src="http://image.email.rent.com/lib/fe9012727663057476/m/1/b0258712-5fbc-4303-9caa-1c5c60eadd88.jpg" width="320" height="" alt="Save and Heart your properties" border="0" style="width: 100%; max-width: 320px; height: auto; background: #dddddd; font-family: 'Ubuntu',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 15px; color: #555555;"></a>
+                                     </td>
+                                 </tr>
+                             </table>
+                         </td>
+                         <!-- Column : END -->
+                         <!-- Column : BEGIN -->
+                         <td width="50%" class="stack-column-center">
+                             <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                 <tr>
+                                     <td dir="ltr" valign="top" style="font-family: 'Ubuntu',Helvetica,Arial,sans-serif; font-size: 15px; line-height: 24px; color: #555555; padding: 0px 20px 10px; text-align: left;" class="center-on-narrow">
+                                          <h1 style="margin: 23px 0 24px; font-size: 55px; line-height: 30px; color: #091540; font-weight: bold;"><img src="http://image.email.rent.com/lib/fe9012727663057476/m/1/489a9fa1-8361-4a09-82aa-0cab0883db4c.jpg" width="40" height="40" alt="Hearting and Saving icon"></h1>
+                                         <h1 style="margin: 10px 0 24px; font-size: 25px; line-height: 26px; color: #091540; font-weight: bold;">Save Properties</h1>
+                                         <p style="margin: 10px 0 24px; line-height: 30px; color: #4a4a4a;">We wouldn't expect you to write down a list of all of your favorites. Rent.com helps keep everything organized, all in one place.</p><br>
+                                     
+                                     </td>
+                                 </tr>
+                             </table>
+                         </td>
+                         <!-- Column : END -->
+                     </tr>
+                 </table>
+             </td>
+         </tr>
+         <!-- Thumbnail Left, Text Right : END -->
+
+
+         <!-- Clear Spacer : BEGIN -->
+         <tr>
+             <td aria-hidden="true" height="20" style="font-size: 0px; line-height: 0px;">&nbsp;
+             </td>
+         </tr>
+         <!-- Clear Spacer : END -->
+
+         <!-- 1 Column Text : BEGIN -->
+         <tr>
+             <td style="background-color:#ffffff;">
+                 <table role="presentation" align="center" cellspacing="0" cellpadding="0" border="0" width="100%">
+                     <tr>
+                         <td style="padding: 40px; text-align: center; font-family: 'Ubuntu',Helvetica,Arial,sans-serif; font-size: 17px; line-height: 24px; color: #4a4b4b; text-decoration:none;">
+        <h1 style="margin: 0 0 10px; font-size: 25px; line-height: 30px; color: #091540; font-weight: bold; text-decoration:none;">Visit the Rent.com Blog</h1>
+                           <p style="margin: 20px 40px 10px; line-height: 30px;">Visit the Rent.com blog for tips in moving, negotiating your rent, decorating ideas and much more.</p>
+                         </td>
+                     </tr>
+      
+       <tr>
+                            <td style="padding: 0 20px 60px;">
+                                <!-- Button : BEGIN -->
+                                <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin: auto;">
+                                    <tr>
+                                        <td class="button-td button-td-primary" style="border-radius: 7px; background: #003bde;">
+           <a class="button-a button-a-primary" href="https://www.rent.com/blog/" style="background: #003bde; border: 1px solid #003bde; font-family: 'Ubuntu',Helvetica,Arial,sans-serif; font-size: 17px; line-height: 19px; text-decoration: none; padding: 16px 44px; color: #ffffff; display: block; border-radius: 7px;">View Blog</a>
+          </td>
+                                    </tr>
+                                </table>
+                                <!-- Button : END -->
+                            </td>
+                        </tr>
+                 </table>
+             </td>
+         </tr>
+         <!-- 1 Column Text : END -->
+
+     </table>
+     <!-- Email Body : END -->
+      
+           <!-- Email Footer : BEGIN -->
+        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin: auto;" class="email-container">
+         <tr>
+             <td style="padding: 10px 0px; font-family: 'Ubuntu',Helvetica,Arial,sans-serif; font-size: 14px; line-height: 15px; text-align: center; color: #888888;">
+                 Search on your mobile and tablet:
+             </td>
+         </tr>
+     </table>
+     <!-- Email Footer : END -->
+   <!--Begin Section for DL APP STORE-->
+                      <!--[if (gte mso 9)|(IE)]>
+                      <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                        <tr>
+                          <td align="center" valign="top" width="600">
+                            <![endif]-->
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+                              <tr>
+                                <td align="center" valign="top" style="padding:20px 10px;">
+                                  <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                      <td align="center" valign="top" style="padding-bottom:15px;">
+                                        <table align="center" cellpadding="0" cellspacing="0" border="0">
+                                          <tr>
+                                            <td align="center" valign="top"><a href="https://play.google.com/store/apps/details?id=com.rent" target="_blank" style="text-decoration:none;"><img src="http://image.email.rent.com/lib/fe9012727663057476/m/1/01e35434-8e6c-4392-9bff-18253862d6d9.png" width="144px" height="7px" alt="Google Play Store - Download Here" border="0" style="width: 100%; max-width: 146px; height: auto; background: #dddddd; font-family: 'Ubuntu',Helvetica, Arial,sans-serif; font-size: 10px; line-height: 10px; color: #555555;"/></a></td>
+                                            <td width="9">&nbsp;</td>
+                                            <td align="center" valign="top"><a href="https://itunes.apple.com/us/app/rent.com-apartments-home-rentals/id388038507" target="_blank" style="text-decoration:none;"><img src="http://image.email.rent.com/lib/fe9012727663057476/m/1/716541d4-beeb-40f1-b7aa-d5d0f9ca025a.png" width="144px" height="7px" alt="Apple App Store - Download Here" border="0" style="width: 100%; max-width: 146px; height: auto; background: #dddddd; font-family: 'Ubuntu',Helvetica, Arial,sans-serif; font-size: 12px; line-height: 12px; color: #555555;"/></a></td>
+                                            <td width="9">&nbsp;</td>                                      
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                            <!--[if (gte mso 9)|(IE)]>
+                          </td>
+                        </tr>
+                      </table>
+                      <![endif]-->
+                  <!--End Section for DL APP STORE--> 
+    <!-- Email Footer DIVIDER GREY LINE -->
+    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin:auto;" class="email-container">
+           <tr>
+                <td height="6" valign="top" align="center" style="border-bottom:1px solid #CCD3E1"></td>
+            </tr>
+            <tr>
+                <td height="6" valign="top" align="center"></td>
+             </tr>
+    </table>
+<!-- Email Footer DIVIDER GREY LINE -->
+<!-- SOCIAL MEDIA ICONS : BEGIN --> 
+
+                      <!--[if (gte mso 9)|(IE)]>
+                      <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+                        <tr>
+                          <td align="center" valign="top" width="600">
+                            <![endif]-->
+                            <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+                              <tr>
+                                <td align="center" valign="top" style="padding:30px 10px;">
+                                  <table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                      <td align="center" valign="top" style="padding-bottom:0px;">
+                                        <table align="center" cellpadding="0" cellspacing="0" border="0">
+                                          <tr>
+                                            <td align="center" valign="top"><a href="https://www.facebook.com/rentdotcom" target="_blank" style="text-decoration:none;"><img src="http://image.email.rent.com/lib/fe9012727663057476/m/1/e8549d66-027c-42fa-ad85-ecaa83682d80.png" width="50" height="50" alt="Facebook" border="0" style="display:block; font-family:'Ubuntu',Helvetica,Arial,sans-serif; font-size:9px; line-height:22px; color:#ffffff;"/></a></td>
+                                            <td width="16">&nbsp;</td>
+                                            <td align="center" valign="top"><a href="https://twitter.com/rentdotcom" target="_blank" style="text-decoration:none;"><img src="http://image.email.rent.com/lib/fe9012727663057476/m/1/8f6370c1-7a5c-4bb3-8c60-f23fc50dac7e.png" width="50" height="50" alt="Twitter" border="0" style="display:block; font-family:'Ubuntu',Helvetica,Arial,sans-serif; font-size:9px; line-height:22px; color:#ffffff;"/></a></td>
+                                            <td width="16">&nbsp;</td>
+                                            <td align="center" valign="top"><a href="https://www.instagram.com/rent_dot_com/" target="_blank" style="text-decoration:none;"><img src="http://image.email.rent.com/lib/fe9012727663057476/m/1/073de4f2-cb0b-416c-b6a5-7097435d0e6b.png" width="50" height="50" alt="Pinterest" border="0" style="display:block; font-family:'Ubuntu',Helvetica,Arial,sans-serif; font-size:9px; line-height:22px; color:#ffffff;"/></a></td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                            <!--[if (gte mso 9)|(IE)]>
+                          </td>
+                        </tr>
+                      </table>
+                      <![endif]-->
+                   
+<!-- SOCIAL MEDIA ICONS : END --> 
+<!-- Email Footer : BEGIN -->
+<table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" style="margin:auto;" class="email-container">
+         <tr>
+             <td style="padding: 12px; font-family:'Ubuntu',Helvetica,Arial,sans-serif; font-size: 12px; line-height: 18px; text-align: center; color: #888888;" align="left">
+                <p style="color: #003bde; text-decoration: none;" class="email-container-footer;"><a href="https://www.rent.com/account/myrent/" style="text-decoration:none; color:#003bde; font-size: 12px; line-height: 18px;">My Saved Places&nbsp;&nbsp;|&nbsp;&nbsp;</a><a href="http://pages.email.rent.com/ManageEmail/"style="text-decoration:none;color:#003bde; font-size: 12px; line-height: 18px;">Manage My Preferences&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.rent.com/company/privacy-full/"style="text-decoration:none; color:#003bde; font-size: 12px; line-height: 18px;">Privacy Policy&nbsp;&nbsp;|</a>&nbsp;&nbsp;<a href="http://pages.email.rent.com/ManageEmail/?JobID=%%jobid%%&ListID=%%listid%%&BatchID=%%_JobSubscriberBatchID%%"style="text-decoration:none;color:#003bde; font-size: 12px; line-height: 18px;" alias="ftr_unsub">Unsubscribe</a>
+                  </p>
+               <br>
+                <span class="unstyle-auto-detected-links">
+                   RentPath, LLC, 950 E. Paces Ferry Road NE, Suite 2600, Atlanta, GA 30326
+               <br><br> 
+© %%=Datepart(Now(),'year')=%% RentPath, LLC. All photos, videos, text, and other content are the property of RentPath, LLC. RENT.COM and the RENT.COM Logo are registered trademarks of RentPath, LLC. All rights reserved.
+               <br><br>
+RentPath, LLC and RENT.COM are not affiliated with or liable for any services offered or received through this third party partnership for Internet or Cable Services. All photos, videos, text, and other content are the property of RentPath, LLC. RENT.COM and the RENT.COM Logo are registered trademarks of RentPath, LLC. All rights reserved.<br></span>
+                 
+             </td>
+         </tr>
+     </table>
+<!-- START EQUAL OPPORTUNITY HOUSING LOGO-->
+     <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="600" class="email-container">
+           <tr>
+              <td align="center">
+                 <img style="center" src="http://image.email.rent.com/lib/fe9012727663057476/m/1/logo_EqualHousing.png" height="47" width="46" style="clear:both; border:0; display:block" alt="Equal Opportunity Housing">
+              </td>
+             </tr>
+    </table>
+<!-- END EQUAL OPPORTUNITY HOUSING LOGO-->   
+    </center>
+</body>
+%%[ ENDIMPRESSIONREGION() ]%%
+<custom name="opencounter" type="tracking">
+</html>
