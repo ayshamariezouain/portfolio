@@ -1,0 +1,594 @@
+%%=ContentBlockbyId("46387")=%%
+%%[ /*  Content Builder|Shared Content|Global Content|46387_gen_tracking_test - it makes subscription prefs work */ ]%%
+
+%%=ContentBlockbyId("43116")=%%
+%%[ /*  Content Builder|Shared Content|Global Content|43116_b2c_sendlog - SendLog ALL Brands // Also edit parameter 5  */ ]%%
+
+%%[
+IF EMPTY(FirstName) THEN 
+SET @FIRSTNAME = ' '
+SET @SUBJECTLINE = "✉️ Collect rent online for free with Rentals.com"
+ELSE
+SET @FIRSTNAME = FirstName
+ET @subjectline = CONCAT(FIRSTNAME, “, let us mail your rent check to your landlord”)
+ENDIF
+]%%
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en" xml:lang="en" style="width: 100%;">
+<head></head>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--[if !mso><!-- -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--<![endif-->
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;" name="viewport">
+<meta name="viewport" content="width=device-width">
+<meta name="robots" content="no index, no follow">
+<meta name="x-apple-disable-message-reformatting">
+<title></title>
+<style>
+  /* cyrillic-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKcg72nU6AF7xm.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKew72nU6AF7xm.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKcw72nU6AF7xm.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKfA72nU6AF7xm.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKcQ72nU6AF7xm.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKfw72nU6AFw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoCxCvjvWyNPYZvg7UI.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoCxCvjtGyNPYZvg7UI.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoCxCvjvGyNPYZvg7UI.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoCxCvjs2yNPYZvg7UI.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoCxCvjvmyNPYZvg7UI.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoCxCvjsGyNPYZvgw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style> 
+
+  
+<style type="text/css">
+  
+.greyfont {color: #555555;}
+.fontaccentcolor, .aptrating { color: #003bde; }
+.fontheadline, .bannerheadline { color: #091540; }
+.fontbold { font-weight: bold; }
+
+.button, .buttonbanner { background-color: #003bde; }
+.buttonblue { background-color: #e2e5e7; }
+.buttonradius { -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+.buttonhover:hover, .buttonbannerhover:hover { background-color: #0133bd !important; }
+
+.contactpropertycolor { color: #003bde; }
+.contactpropertybutton { -webkit-border-bottom-right-radius: 4px; -webkit-border-bottom-left-radius: 4px; -moz-border-radius-bottomright: 4px; -moz-border-radius-bottomleft: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; border: 1px solid #003bde;  }
+.contactpropertybutton:hover { background-color: #003bde;  }
+.contactpropertybutton:hover a span { color: white; }
+.contactpropertycheckborder { border: 2px solid #003bde; }
+.contactpropertybutton:hover .contactpropertycheckborder { border: 2px solid white; }
+
+.radius { -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+.radiustop { -webkit-border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius-topleft: 4px; -moz-border-radius-topright: 4px; border-top-left-radius: 4px; border-top-right-radius: 4px; }
+
+.banner { background-color: #f7f7f7; }
+.buttonfontbanner { color: white; }
+
+.rating > span:hover { color: #003bde !important; }
+.rating { unicode-bidi: bidi-override; direction: rtl; }
+.rating > span:hover:before, .rating > span:hover ~ span:before { content: "\2605" !important; position: absolute !important; color: #003bde !important; cursor: pointer; }
+
+
+@media all {
+.font { font-family: 'Ubuntu', Arial, sans-serif !important; }
+}
+
+</style>
+
+<style type="text/css">
+.ExternalClass { width:100%; }
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
+table td { border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+h1, h2, h3, h4, h5, h6 { font-size: inherit; padding: 0; margin: 0; color: black; line-height: 100%; }
+.applelinks a { text-decoration: none; color: inherit !important; }
+a { color: #c6c6c6; text-decoration: none; }
+a, a:link, a:visited { color: inherit; text-decoration: none; }
+span.MsoHyperlink { mso-style-priority: 99; color: inherit; }
+span.MsoHyperlinkFollowed { mso-style-priority: 99; color: inherit; }
+img { border: 0px !important; }
+
+body {
+ font-family: Segoe UI, Arial, sans-serif;
+ font-size: 14px;
+ -webkit-text-size-adjust: none;
+ -ms-text-size-adjust: none;
+ -webkit-font-smoothing: antialiased;
+ margin: 0;
+ padding: 0;
+ width: 100% !important;
+}
+
+.opacity:hover { opacity: 0.8 !important; }
+.buttonrent:hover { background-color: #0133bd !important; }
+.buttonrentals:hover { background-color: #26b5bf !important; }
+.buttonapartmentguide:hover { background-color: #e12233 !important; }
+.buttonpartner:hover { background-color: #3b3b3b !important; }
+
+@media all {
+.nunito { font-family: 'Nunito Sans', Arial, sans-serif !important; }
+.ubuntu { font-family: 'Ubuntu', Arial, sans-serif !important; }
+.barlow { font-family: 'Barlow', Arial, sans-serif !important; }
+}
+
+@media only screen and (max-width: 480px) {
+.w100m, .column50, .column33, .column25, .column75, .column66 { width: 100% !important; }
+.w90m { width: 90% !important;}
+.w80m { width: 90% !important;}
+.expandm { width: 100% !important; display: block !important; }
+.resizem { width: 100% !important; height: auto !important; }
+.hidem { display: none !important; }
+.h1m { font-size: 22px !important;}
+.h2m { font-size: 15px !important;}
+.h21m { font-size: 17px !important;}
+.h3m { font-size: 13px !important;}
+.tcenterm { text-align: center !important; }
+.tleftm { text-align: left !important; }
+.trightm { text-align: right !important; }
+.height0m { height: 0 !important; }
+.showm { display: block !important; max-height: 1000px !important; width: 100% !important; overflow: visible !important; align: center !important; }
+
+.logo { width: 150px !important; height: auto !important; }
+.starrating { font-size: 35px !important;}
+
+.pad0m { padding: 0px !important; }
+.padt0m { padding-top: 0px !important; }
+.padt5m { padding-top: 5px !important; }
+.padt10m { padding-top: 10px !important; }
+.padt20m { padding-top: 20px !important; }
+.padt30m { padding-top: 30px !important; }
+.padb0m { padding-bottom: 0px !important;}
+.padb5m { padding-bottom: 5px !important;}
+.padb10m { padding-bottom: 10px !important;}
+.padb20m { padding-bottom: 20px !important;}
+.padb30m { padding-bottom: 30px !important;}
+}
+
+@media only screen and (max-width: 711px) {
+.ow100 { width: 100% !important; }
+.w100 { width: 100% !important; }
+.w90 { width: 90% !important; }
+.w80 { width: 90% !important; }
+.hide { display: none !important; }
+.resize { width: 100% !important; height: auto !important; }
+.resize img { max-width: 100% !important; height: auto !important; }
+.resize a { width: auto !important; height: auto !important; }
+.expand { width: 100% !important; display: block !important; }
+.height0 { height: 0 !important; }
+.column50 { width: 50%; }
+.column50a { width: 50%; }
+.column33 { width: 33.33%; }
+.column25 { width: 25%; }
+.column75 { width: 75%; }
+.column66 { width: 66%; }
+.tcenter { text-align: center !important; }
+.show { display: block !important; max-height: 1000px !important; width: 100% !important; overflow: visible !important; align: center !important; }
+
+.border0 { border: 0px !important; }
+.pad0 { padding: 0px !important; }
+.padt0 { padding-top: 0px !important; }
+.padt5 { padding-top: 5px !important; }
+.padt10 { padding-top: 10px !important; }
+.padt20 { padding-top: 20px !important; }
+.padt30 { padding-top: 30px !important; }
+.padb0 { padding-bottom: 0px !important; }
+.padb5 { padding-bottom: 5px !important; }
+.padb10 { padding-bottom: 10px !important; }
+.padb20 { padding-bottom: 20px !important; }
+.padb30 { padding-bottom: 30px !important; }
+}
+</style>
+<!--[if mso>
+<style type="text/css">
+body {
+ margin: 0 !important;
+  padding: 0 !important;
+  font-family: Segoe UI, Arial, sans-serif;
+}
+table, td, div, p {
+ font-family: Segoe UI, Arial, sans-serif;
+  line-height: normal;
+}
+</style>
+<xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+<![endif-->
+</head>
+  
+<body class="tli" style="-webkit-text-size-adjust: none;-ms-text-size-adjust: none; padding: 0; margin: 0; background-color: white;">
+
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
+<tr>
+  <td align="center" style="background-color: #ffffff;">
+ <table class="w100" width="711" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+
+   <!-- /// DOWNLOAD APP START -->
+<tr>
+  <td align="center" style="padding-top: 0px;">
+    <table class="padt5m" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+        <td class="button radius" align="center" style="overflow: hidden;">
+          <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td valign="top">
+
+                <!--[if mso]></td><td valign="top"><![endif]-->
+
+                <table class="w100" width="100%" border="0" align="left" cellpadding="0" cellspacing="0" role="presentation">
+                  <tr>
+                    <td align="center" style="background-color: #ffffff;">
+                      <!--[if mso]></table><table><![endif]-->
+                      <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <!-- min267x246 IMAGE START -->
+                          <td align="center" valign="top" style="padding-top: 0 px;"><a href="#"><img src="http://image.message.rentpath.com/lib/fe91127477670d7e76/m/1/a2e67ee7-4be1-40fa-bedb-a742febb4dc1.jpg" width="711" alt="" style="display: block; border: 0;" class="resize img"/></a></td>
+                          <!-- IMAGE END -->
+                        </tr>
+                      </table>
+
+                        <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                          <tr>
+                            <!-- HEADLINE START -->
+                            <td class="font h1m allcaps fontbold" style="padding-top: 0px; text-align: center; color: #4e4e4e; font-size: 28px; font-family: 'Ubuntu', Arial, sans-serif; line-height: 1.2em;"><span class="fontheadline" style="font-family: 'Ubuntu', Arial, sans-serif;">Pay your rent online with <a href="https://www.rentals.com/rentpay" target="_blank" style="color: #091540; text-decoration: none;"> RentPay</a></span></td>
+                            <!-- HEADLINE END -->
+                          </tr>
+                          <tr>
+                            <!-- COPY START -->
+                            <td class="font h2m padt10m" style="margin: 20px 40px 28px; padding-top: 30px; text-align: left; font-size: 18px; line-height: 1.4em; color: #4a4a4a; font-family: Arial, sans-serif;"><span class="greyfont">Since the end of %%=Format(Now(), “MMMM”)=%% is coming up, we want to share an easier way to pay your rent.</span></td>
+                            <!-- COPY END -->
+                          </tr>
+                           <tr>
+                            <!-- COPY START -->
+                            <td class="font h2m padt10m" style="margin: 20px 40px 28px; padding-top: 10px; text-align: left; font-size: 18px; line-height: 1.4em; color: #4a4a4a; font-family: Arial, sans-serif;"><span class="greyfont"><strong>Rent.com</strong> has partnered with our sister site <strong>Rentals.com</strong> to introduce a new a product called <a href=“https://www.rentals.com/rentpay” target=“_blank” alias=“RENTPAY_LINK” style=“text-decoration: underline; color: #000a73; font-weight: bold;“>RentPay</a>.</span></td>
+                            <!-- COPY END -->
+                          </tr>
+                         <tr>
+                            <!-- COPY START -->
+                            <td class="font h2m padt10m" style="margin: 20px 40px 28px; padding-top: 20px; text-align: left; font-size: 18px; line-height: 1.4em; color: #4a4a4a; font-family: Arial, sans-serif;"><span class="greyfont"> RentPay mails the rent check to your landlord on your behalf, saving you time and eliminating stress.</span></td>
+                            <!-- COPY END -->
+                          </tr>
+                        </table>
+                      </td>
+                  </tr>
+                </table>               
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<!-- DOWNLOAD APP END /// -->
+
+    <!-- / BUTTON START / -->
+      <tr>
+        <td class="padt20m" align="center" style="padding-top: 30px;">
+          <table class="w90m padt5m" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+            <tr>
+              <td class="button buttonradius" style="overflow: hidden;">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                  <tr>
+                    <!-- COPY START -->
+                    <td class="font h21m buttonhover height0 pad0m" align="center" height="45" style="padding-left: 35px; padding-right: 35px; font-size: 18px; color: white; font-family: Arial, sans-serif; text-align: center; font-weight: bold;"><a href=“https://www.rentals.com/signup” alias="%%=v(@busunit)=%%|%%__AdditionalEmailAttribute5%%|%%__AdditionalEmailAttribute2%%|%%emailname_%%|PayMyRent|Button" style="text-decoration: none;"><span style="display: block; width: 100%; padding-top: 10px; padding-bottom: 10px; color: white;">Pay My Rent</span></a></td>
+                    <!-- COPY END -->
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- / BUTTON END / -->
+<!--- TOP PORTION END --->
+<!-- /// PRICE HIGHLIGHT START -->
+<tr>
+  <td align="center" style="padding-top: 35px; padding-bottom: 5px;">
+    <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+      <tr>
+        <!-- HEADLINE START -->
+        <td class="font h1m fontbold allcaps" style="text-align: center; color: #4e4e4e; font-size: 25px; font-family: Arial, sans-serif; line-height: 1.2em;"><span class="fontheadline">How It Works</span>
+        </td>
+        <!-- HEADLINE END -->
+
+      <tr>
+        <td align="center">
+          <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+            <tr>
+              <td valign="top">
+
+                <!--[if mso]></table><table><![endif]-->
+
+                <table class="column50a" width="212" border="0" align="left" cellpadding="0" cellspacing="0" role="presentation">
+                  <tr>
+                    <td align="center" style="padding-top: 30px;">
+                      <table class="w80 opacity" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                          <!-- min120x120 IMAGE START -->
+                          <td align="center" style="padding-bottom: 15px;"><a href="#"><img src="https://images.trendline.email/mts/rentpath/RENT19_MasterTemplate_626989_icon_computer_purple_circle.png" width="120" alt="Calendar Icon - Schedule Your Payment" style="display: block; border: 0; max-width: 100%;"/></a></td>
+                          <!-- IMAGE END -->
+                        </tr>
+                        <tr>
+                            <!-- COPY START -->
+                          <td height="55" valign="top" class="font h2m" style="text-align: center; font-size: 18px; line-height: 1.2em; color: #4a4a4a; font-family: Arial, sans-serif;"><a href="#" alias="" style="color: #4a4a4a; text-decoration: none;"><strong>Schedule Your Rent Payment</strong></a><span class="hide"></span><p style="padding-bottom: 5px;">
+                            Tell us the basics, like who receives your rent payments and when they are due. Then select your preferred method of payment: credit card, debit card or eCheck.</td>
+                          <!-- COPY END -->
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!--[if mso]></td><td valign="top"><![endif]-->
+                <table class="column50a" width="212" border="0" align="left" cellpadding="0" cellspacing="0" role="presentation">
+                  <tr>
+                    <td align="center" style="padding-top: 30px;">
+                      <table class="w80 opacity" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                          <!-- min120x120 IMAGE START -->
+                          <td align="center" style="padding-bottom: 15px;"><a href="#"><img src="https://images.trendline.email/mts/rentpath/RENT19_MasterTemplate_626989_icon_check_purple_circle.png" width="120" alt="" style="display: block; border: 0; max-width: 100%;"/></a></td>
+                          <!-- IMAGE END -->
+                        </tr>
+                        <tr>
+                          <!-- COPY START -->
+                          <td height="55" valign="top" class="font h2m" style="text-align: center; font-size: 18px; line-height: 1.2em; color: #4a4a4a; font-family: Arial, sans-serif;"><a href="#" alias="" style="color: #4a4a4a; text-decoration: none;"><strong>We Deposit The Check</strong></a><p style="padding-bottom: 5px;">
+We directly transfer funds to your landlord’s bank account.</p>
+<strong>or</strong><p style="padding-bottom: 5px;">
+<strong>We Mail The Check</strong></p>
+Rentals.com mails the check to your landlord when you tell us to.
+                            </td>
+                          <!-- COPY END -->
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!--[if mso]></td><td valign="top"><![endif]-->
+                <table class="column50a" width="212" border="0" align="left" cellpadding="0" cellspacing="0" role="presentation">
+                  <tr>
+                    <td align="center" style="padding-top: 30px;">
+                      <table class="w80 opacity" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+                        <tr>
+                          <!-- min120x120 IMAGE START -->
+                          <td align="center" style="padding-bottom: 15px;"><a href="#"><img src="https://images.trendline.email/mts/rentpath/RENT19_MasterTemplate_626989_icon_money_purple_circle.png" width="120" alt="" style="display: block; border: 0; max-width: 100%;"/></a></td>
+                          <!-- IMAGE END -->
+                        </tr>
+                        <tr>
+                          <!-- COPY START -->
+                          <td height="55" valign="top" class="font h2m" style="text-align: center; font-size: 18px; line-height: 1.2em; color: #4a4a4a; font-family: Arial, sans-serif;"><a href="#" style="color: #4a4a4a; text-decoration: none;"><strong>Receive Deposit Notifications</strong></a><span class="hide"></span><p style="padding-bottom: 5px;">You’ll be notified in your dashboard when your landlord receives your rent payment.</p></td>
+                          <!-- COPY END -->
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- / BUTTON START / -->
+      <tr>
+        <td class="padt20m" align="center" style="padding-top: 30px;">
+          <table class="w90m padt5m" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+            <tr>
+              <td class="button buttonradius" style="overflow: hidden;">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                  <tr>
+                    <!-- COPY START -->
+                    <td class="ubuntu h21m buttonhover height0 pad0m" align="center" height="45" style="padding-left: 35px; padding-right: 35px; font-size: 18px; color: white; font-family: Arial, sans-serif; text-align: center; font-weight: bold;"><a href="https://www.rent.com/blog/" style="text-decoration: none;"><span style="display: block; width: 100%; padding-top: 10px; padding-bottom: 10px; color: white;">View More</span></a></td>
+                    <!-- COPY END -->
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <!-- / BUTTON END / -->
+    </table>
+  </td>
+</tr>
+<!-- PRICE HIGHLIGHT END /// -->
+   
+<!-- END MODULES HERE -->
+
+<!-- /// RENT.COM FOOTER START -->
+    <tr>
+     <td align="center" style="padding-top: 30px; padding-bottom: 20px;">
+         <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+ <tr>
+         <!-- min155w IMAGE START -->
+      <td align="center" style="border-top: 1px solid #ebebeb; padding-top: 40px;"><a href="https://www.rent.com/" alias="%%=v(@busunit)=%%|%%__AdditionalEmailAttribute5%%|%%__AdditionalEmailAttribute2%%|%%emailname_%%|Footer|Logo|img"><img src="http://image.message.rentpath.com/lib/fe91127477670d7e76/m/1/bc675fab-e5b6-4b49-9246-857ba690c99a.png" width="155" alt="rent.com" style="display: block; border: 0; color: #3654A5; font-size: 30px; font-weight: bold; font-family: sans-serif; max-width: 100%;"/></a></td>
+       <!-- IMAGE END -->
+        </tr>
+ <tr>
+<td align="center" style="padding-top: 25px;">
+  <table border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+  <!-- COPY START -->
+      <td class="ubuntu" style="padding-right: 10px; text-align: center; color: #091540; font-size: 13px; font-family: Arial, sans-serif; font-weight: bold;"><a class="opacity" href="http://pages.message.rentpath.com/ManageEmail/?EmailAddress=%%=v(@EmailAddress)=%%&Brand=%%__AdditionalEmailAttribute5%%&JobID=%%JobID%%&ListID=%%ListID%%&BatchID=%%_JobSubscriberBatchID%%&BusinessUnit=%%=v(@busunit)=%%" alias="%%=v(@busunit)=%%|%%__AdditionalEmailAttribute5%%|%%__AdditionalEmailAttribute2%%|%%emailname_%%|footer|txt|ManagePrefs"><span style="color: #091540; text-decoration: underline;">Manage&nbsp;Preferences</span></a></td>
+       <!-- COPY END -->
+  <td align="center" style="padding-left: 10px;">
+  <table class="opacity" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+  <!-- min15x15 IMAGE START -->
+      <td style="padding-right: 5px; line-height: 0px;"><a href="#"><img src="http://image.message.rentpath.com/lib/fe91127477670d7e76/m/1/4ec23982-a6b2-4c3a-b2f7-794779c452b4.png" width="15" alt="Heart" style="display: block; border: 0px;"/></a></td>
+  <!-- IMAGE END -->
+  <!-- COPY START -->
+      <td class="ubuntu" style="text-align: center; color: #091540; font-size: 13px; font-family: Arial, sans-serif; font-weight: bold;"><a href="https://www.rent.com/saved" alias="%%=v(@busunit)=%%|%%__AdditionalEmailAttribute5%%|%%__AdditionalEmailAttribute2%%|%%emailname_%%|footer|txt|Saved"><span style="color: #091540; text-decoration: underline;">Save&nbsp;Favorites</span></a></td>
+       <!-- COPY END -->
+    </tr>
+</table>
+  </td>
+
+    </tr>
+</table>
+  </td>
+    </tr>
+ <tr>
+     <!-- COPY START -->
+      <td class="ubuntu" style="padding-top: 5px; text-align: center; color: #091540; font-size: 13px;  font-family: Arial, sans-serif; line-height: 1.4em;"><a class="opacity" href="https://www.rent.com/company/privacy-full/" alias="%%=v(@busunit)=%%|%%__AdditionalEmailAttribute5%%|%%__AdditionalEmailAttribute2%%|%%emailname_%%|footer|txt|Privacy"><span style="color: #091540; text-decoration: underline;">Privacy Policy</span></a> &nbsp;&nbsp; <a class="opacity" href="http://pages.message.rentpath.com/ManageEmail/?EmailAddress=%%=v(@EmailAddress)=%%&Brand=%%__AdditionalEmailAttribute5%%&JobID=%%JobID%%&ListID=%%ListID%%&BatchID=%%_JobSubscriberBatchID%%&BusinessUnit=%%=v(@busunit)=%%" alias="%%=v(@busunit)=%%|%%__AdditionalEmailAttribute5%%|%%__AdditionalEmailAttribute2%%|%%emailname_%%|footer|txt|Unsubscribe"><span style="color: #091540; text-decoration: underline;">Unsubscribe</span></a> &nbsp;&nbsp;</td>
+       <!-- COPY END -->
+    </tr>
+ <tr>
+      <td align="center" style="padding-top: 30px;">
+         <table border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+     <tr>
+       <!-- min35x35 IMAGE START -->
+      <td align="center" valign="top" style="padding-left: 5px; padding-right: 5px;"><a href="https://www.facebook.com/rentdotcom" alias=""><img src="http://image.message.rentpath.com/lib/fe91127477670d7e76/m/1/65ed90bd-e2fe-4d9a-bb6d-42664cc0ec70.png" alias="%%=v(@busunit)=%%|%%__AdditionalEmailAttribute5%%|%%__AdditionalEmailAttribute2%%|%%emailname_%%|footer|button|Facebook" width="35" alt="Facebook" style="display: block; border: 0; max-width: 100%;" class="opacity"/></a></td>
+       <!-- IMAGE END -->
+       <!-- min35x35 IMAGE START -->
+      <td align="center" valign="top" style="padding-left: 5px; padding-right: 5px;"><a href="https://twitter.com/RentDotCom" alias=""><img src="http://image.message.rentpath.com/lib/fe91127477670d7e76/m/1/00b863a0-d88f-458b-a9a4-3c48b4ee6f70.png" width="35" alt="Twitter" style="display: block; border: 0; max-width: 100%;" class="opacity"/></a></td>
+       <!-- IMAGE END -->
+       <!-- min35x35 IMAGE START -->
+      <td align="center" valign="top" style="padding-left: 5px; padding-right: 5px;"><a href="https://www.pinterest.com/rentdotcom/" alias=""><img src="http://image.message.rentpath.com/lib/fe91127477670d7e76/m/1/b0ccc01e-13ad-47d1-80d1-c2c0ef4b042b.png" width="35" alt="Pintrest" style="display: block; border: 0; max-width: 100%;" class="opacity"/></a></td>
+       <!-- IMAGE END -->
+       <!-- min35x35 IMAGE START -->
+      <td align="center" valign="top" style="padding-left: 5px; padding-right: 5px;"><a href="https://www.youtube.com/user/rent" alias=""><img src="http://image.message.rentpath.com/lib/fe91127477670d7e76/m/1/76329006-91fc-46f3-acbd-229e56474ff2.png" width="35" alt="Youtube" style="display: block; border: 0; max-width: 100%;" class="opacity"/></a></td>
+       <!-- IMAGE END -->
+   <!-- min35x35 IMAGE START -->
+      <td align="center" valign="top" style="padding-left: 5px; padding-right: 5px;"><a href="https://www.instagram.com/rent_dot_com/" alias=""><img src="http://image.message.rentpath.com/lib/fe91127477670d7e76/m/1/2d18f304-0a14-4653-9fb8-c61879c4608c.png" width="35" alt="Instagram" style="display: block; border: 0; max-width: 100%;" class="opacity"/></a></td>
+       <!-- IMAGE END -->
+      </tr>
+</table>
+        </td>
+    </tr>
+ <tr>
+  <td align="center" style="padding-top: 30px;">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+ <tr>
+       <td align="center" style="border-top: 1px solid #ebebeb;">
+        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" role="presentation">
+    <tr>
+     <td valign="top">
+            <table class="column66" width="577" border="0" align="left" cellpadding="0" cellspacing="0" role="presentation">
+    <tr>
+     <td class="padt20m" style="padding-top: 25px;">
+         <table class="w100m" width="95%" border="0" align="left" cellpadding="0" cellspacing="0" role="presentation">
+    <tr>
+     <!-- COPY START -->
+      <td class="ubuntu tcenterm" style="text-align: left; color: #4a4a4a; font-size: 12px; font-family: Arial, sans-serif;">&copy;%%=Format(Now(), "yyyy")=%% RentPath, LLC &nbsp;|&nbsp; All content is the property of RentPath,&nbsp;LLC. &nbsp;|&nbsp; All&nbsp;Rights&nbsp;Reserved <span class="expandm padt10m">RentPath,&nbsp;LLC. 50&nbsp;East&nbsp;Paces&nbsp;Ferry&nbsp;Road&nbsp;NE, Suite&nbsp;2600, Atlanta,&nbsp;GA&nbsp;30326</span></td>
+       <!-- COPY END -->
+    </tr>
+</table>
+        </td>
+    </tr>
+</table>
+<!--[if mso]></td><td valign="top"><![endif]-->
+  <table class="column33" width="57" border="0" align="left" cellpadding="0" cellspacing="0" role="presentation">
+    <tr>
+  <!-- min55x55 IMAGE START -->
+      <td align="center" style="padding-top: 15px;"><a href="https://www.rent.com/company/legal/equal/" alias="%%=v(@busunit)=%%|%%__AdditionalEmailAttribute5%%|%%__AdditionalEmailAttribute2%%|%%emailname_%%|footer|img|EqualHousingOppty"><img src="http://image.message.rentpath.com/lib/fe91127477670d7e76/m/1/faa106b8-7a24-46c7-baa7-553c56be651d.png" width="55" alt="Equal Housing Opportunity" style="display: block; border: 0px;"/></a></td>
+  <!-- IMAGE END -->
+    </tr>
+</table>
+        </td>
+    </tr>
+</table>
+       </td>
+    </tr>
+ </table>
+          </td>
+         </tr>
+        </table>
+       </td>
+    </tr>
+    <!-- RENT.COM FOOTER END /// -->
+  </table>
+  </td>
+</tr>
+</table>
+</body>
+</html>
