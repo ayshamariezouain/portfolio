@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" lang="en_US" xml:lang="en_US" style="width: 100%;">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--[if !mso><!-- -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--<![endif-->
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1.0">
+<meta name="x-apple-disable-message-reformatting">
+<meta name="format-detection" content="telephone=no, date=no, address=no">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
+    
+<title></title>
+    
+<!--[if !mso]>
+<style>
+font-family: Calibri,sans-serif;
+</style>
+<!--<![endif]-->
+
+<style type="text/css">
+.ExternalClass { width:100%; }
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height: 100%; }
+table td { border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+h1, h2, h3, h4, h5, h6 { font-size: inherit; padding: 0; margin: 0; color: #000000; line-height: 100%; }
+.applelinks a { text-decoration: none; color: inherit !important; }
+a { color: #000000; text-decoration: none; }
+a, a:link, a:visited { color: inherit; text-decoration: none; }
+span.MsoHyperlink { mso-style-priority: 99; color: inherit; }
+span.MsoHyperlinkFollowed { mso-style-priority: 99; color: inherit; }
+img { border: 0px !important; }
+
+body {
+font-family: Calibri,sans-serif;
+font-size: 14px;
+-webkit-text-size-adjust: none;
+-ms-text-size-adjust: none;
+-webkit-font-smoothing: antialiased;
+margin: 0;
+padding: 0;
+width: 100% !important;
+}
+
+@media all {
+.font { font-family: Arial, sans-serif !important; }
+}
+
+.linkopacity:hover { opacity: 0.8 !important; }
+.blblue:hover { background-color: #56AEB1; !important; }
+.bred:hover { background-color: #e12233 !important; }
+.bgray:hover { background-color: #d3d7d8 !important; }
+.bwhite:hover { background-color: #f1f2f2 !important; }
+.bpurple:hover { background-color: #000750 !important; }
+
+.bradius { -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; overflow: hidden; }
+
+
+@media only screen and (max-width: 480px) {
+.w100m, .column50, .column33, .column25, .column75, .column66 { width: 100% !important; }
+.w90m { width: 90% !important;}
+.w80m { width: 80% !important;}
+.expandm { width: 100% !important; display: block !important; }
+.resizem { width: 100% !important; height: auto !important; }
+.hidem { display: none !important; }
+.h1m { font-size: 22px !important;}
+.h12m { font-size: 18px !important;}
+.h2m { font-size: 14px !important;}
+.h21m { font-size: 17px !important;}
+.h3m { font-size: 12px !important; -webkit-text-size-adjust: none;-ms-text-size-adjust: none; }
+.tcenterm { text-align: center !important; }
+.tleftm { text-align: left !important; }
+.trightm { text-align: right !important; }
+.height0m { height: 0 !important; }
+.showm { display: block !important; max-height: 1000px !important; width: 100% !important; overflow: visible !important; align: center !important; }
+
+.logo { width: 150px !important; height: auto !important; }
+.starrating { font-size: 35px !important;}
+.hprop { height: 190px !important; }
+
+.pad0m { padding: 0px !important; }
+.padt0m { padding-top: 0px !important; }
+.padt5m { padding-top: 5px !important; }
+.padt10m { padding-top: 10px !important; }
+.padt20m { padding-top: 20px !important; }
+.padt30m { padding-top: 30px !important; }
+.padb0m { padding-bottom: 0px !important;}
+.padb5m { padding-bottom: 5px !important;}
+.padb10m { padding-bottom: 10px !important;}
+.padb20m { padding-bottom: 20px !important;}
+.padb30m { padding-bottom: 30px !important;}
+}
+
+@media only screen and (max-width: 711px) {
+.ow100 { width: 100% !important; }
+.w100 { width: 100% !important; }
+.w90 { width: 90% !important; }
+.w80 { width: 90% !important; }
+.hide { display: none !important; }
+.resize { width: 100% !important; height: auto !important; }
+.resize img { max-width: 100% !important; height: auto !important; }
+.resize a { width: auto !important; height: auto !important; }
+.expand { width: 100% !important; display: block !important; }
+.height0 { height: 0 !important; }
+.column50 { width: 50%; }
+.column50a { width: 50%; }
+.column33 { width: 33.33%; }
+.column25 { width: 25%; }
+.column75 { width: 75%; }
+.column66 { width: 66%; }
+.tcenter { text-align: center !important; }
+.show { display: block !important; max-height: 1000px !important; width: 100% !important; overflow: visible !important; align: center !important; }
+
+.border0 { border: 0px !important; }
+.pad0 { padding: 0px !important; }
+.padt0 { padding-top: 0px !important; }
+.padt5 { padding-top: 5px !important; }
+.padt10 { padding-top: 10px !important; }
+.padt20 { padding-top: 20px !important; }
+.padt30 { padding-top: 30px !important; }
+.padb0 { padding-bottom: 0px !important; }
+.padb5 { padding-bottom: 5px !important; }
+.padb10 { padding-bottom: 10px !important; }
+.padb20 { padding-bottom: 20px !important; }
+.padb30 { padding-bottom: 30px !important; }
+}
+</style>
+<!--[if mso>
+<style type="text/css">
+body {
+margin: 0 !important;
+padding: 0 !important;
+font-family: Arial, sans-serif;
+}
+table, td, div, p {
+font-family: Arial, sans-serif;
+line-height: normal;
+}
+</style>
+<xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml>
+<![endif-->
+
+</head>
+<body class="dws_deloitte" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;padding:0;margin:0; background-color:#FFFFFF;">
+<custom name="opencounter" type="tracking" />
+<!-- Visually Hidden Preheader Text : BEGIN -->
+<div style="display:none;font-size:0px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family:sans-serif;">&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+</div>
+<div style="display:none;font-size:0px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide: all; font-family: sans-serif;">&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+</div>
+<!-- Preview Text Spacing Hack : END -->
+<table role="presentation"width="100%" border="0" align="center"cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;">
+<tr>
+<td align="center"style="background-color:#FFFFFF;">
+<!-- START OF TABLES -->
+<!-- ||| PREHEADER START -->
+<table role="presentation"class="w90 hidem" width="640" border="0" align="center"cellpadding="0" cellspacing="0">
+<tr>
+<!-- COPY -->
+<td class="font" style="padding-top:10px;padding-bottom:10px;text-align:right;font-size: 12px;line-height: 1.4em; color: #727272;font-family:Calibri,sans-serif!important;"><a alias="view in browser"class="copyp" style="text-align:left;color:#009da2;font-size:14px;line-height:22px;mso-line-height:exactly;margin-bottom:0px;margin-bottom:0px;font-family:Calibri,sans-serif!important;text-decoration: none;" href="%%view_email_url%%">View in browser</a> </td>
+</tr>
+</table>
+<!-- PREHEADER END ||| -->
+<!-- ||| DWS HEADER START -->
+<table role="presentation"role="presentation"class="w100" width="640" border="0" align="center"cellpadding="0" cellspacing="0">
+<tr>
+<!-- LOGO -->
+<td class="padt10m padb10m" align="left" style="background-color:#000000;padding-top:5px;padding-bottom:5px;padding-left:15px;padding-right:5px;"><a href="https://www.dws.com/en-us/" alias="DWS_Logo" style="display:block;border:0;color:#FFFFFF;font-size: 30px;font-family:sans-serif;max-width:100%;background-color:#000000;"><img src="https://image.insight.dws.com/lib/fe4511707564057d751474/m/2/4ee523ff-7e4c-4595-b975-b4589f9f5035.png" width="" alt="DWS" style="display:block;border:0;color:#FFFFFF;background-color:#000000;max-width:100%;" class="resizem"/></a></td>
+</tr>
+</table>
+<!-- DWS HEADER END ||| -->
+<!-- ||| HEADLINE START -->
+<table role="presentation"width="640" border="0" align="center"cellpadding="0" cellspacing="0" class="w100" style="border:solid 1px #000000;"> 
+<tr>
+    <td class="h1m" style="padding-left:20px;padding-top:20px;padding-bottom:10px;text-align:left;color:#000000;font-size:24px;font-family:Rockwell,serif!important;line-height:1.2em;text-decoration:none;">
+    DWS Digest</td>
+</tr>
+<tr>
+    <td class="h1m" style="padding-left:20px;padding-top:10px;padding-bottom:20px;text-align:left;color:#56AEB1;font-size:18px;line-height:24px;font-family:Rockwell,serif!important;text-decoration: none;">Access our latest insights, calls and events</td>
+</tr>
+    <tr><td class="" style="padding-left:20px;padding-bottom:10px;padding-right:20px;text-align:left;color:#757575;font-size:14px;line-height:22px;mso-line-height:exactly;font-weight:400;margin-bottom:0;font-family:Calibri,sans-serif!important;">Don’t miss a single update from DC expert Frank Kelly, our global CIO team, portfolio managers and other experts. Curate your own DWS research and intellectual capital experience by visiting the DWS subscription center and choosing the people and topics you would like to follow.</td></tr>
+<!-- BUTTON --><tr>
+<td class="padt20m" align="center"style="padding-top:20px;padding-bottom:20px;padding-left:20px;">
+<table role="presentation"class="w90m" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr><td class="font bblue bradius pad0m" align="center"style="display: block; background-color:#009da2;padding-top:10px;padding-bottom:10px;padding-left:35px; padding-right:35px;font-size: 17px; color:#FFFFFF;font-family:Calibri,sans-serif!important;text-align:center;font-weight:normal;"><a href="https://outlook.dws.com/subscription-center/home" alias="Subscribe" style="color:#FFFFFF; text-decoration: none;"><span class="padt10m padb10m" style="display:block; width: 100%;">Subscribe</span></a></td>
+</tr></table></td></tr><!-- BUTTON -->
+</table>
+<!-- HEADLINE END ||| -->
+    
+<!-- ||| HEADLINE START -->
+<table role="presentation"width="640" border="0" align="center"cellpadding="0" cellspacing="0" class="w100" style="border:solid 1px #000000;">
+<tr>
+    <td class="h1m" style="padding-left:20px;padding-top:20px;padding-bottom:10px;text-align:left;color:#56AEB1;font-size:18px;line-height:24px;font-family:Rockwell,serif!important;text-decoration: none;">Featured insights</td>
+</tr>
+<tr>
+    <td class="h1m" style="padding-left:20px;padding-top:10px;padding-bottom:20px;text-align:left;color:#000000;font-size:24px;font-family:Rockwell,serif!important;line-height:1.2em;text-decoration:none;">The link between money velocity and speculation</td>
+</tr>
+<tr>
+    <td class="" style="padding-left:20px;padding-bottom:10px;padding-right:20px;text-align:left;color:#757575;font-size:14px;line-height:22px;mso-line-height:exactly;font-weight:400;margin-bottom:0;font-family:Calibri,sans-serif!important;">The prices of financial assets are set by supply and demand. If money velocity is very high, it means a relatively high amount of money is going into the real economy, and the public does not have as much left over for savings. That means the demand for financial assets will be relatively weak. In contrast, when money velocity is very low and demand for financial assets is high, speculation usually emerges.</td>
+</tr>
+<!-- BUTTON --><tr>
+<td class="padt20m" align="center"style="padding-top:20px;padding-bottom:20px;padding-left:20px;">
+<table role="presentation"class="w90m" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr><td class="font bblue bradius pad0m" align="center"style="display: block; background-color:#009da2;padding-top: 10px; padding-bottom: 10px; padding-left: 35px; padding-right: 35px; font-size: 17px; color: #FFFFFF;font-family:Calibri,sans-serif!important;text-align:center; font-weight:normal;"><a href="https://image.insight.dws.com/lib/fe4511707564057d751474/m/2/c11b7be9-0aed-4001-84c9-0b1419eec78a.pdf" alias="Read_Opinion" style="color:#FFFFFF; text-decoration: none;"><span class="padt10m padb10m" style="display: block; width: 100%;">Read Opinion</span></a></td>
+</tr></table></td></tr><!-- BUTTON -->
+<tr>
+    <td class="h1m" style="padding-left:20px;padding-top:10px;padding-bottom:20px;text-align:left;color:#000000;font-size:16px;font-family:Rockwell,serif!important;line-height:1.2em;text-decoration:none;">More insights</td>
+</tr>
+<tr>
+    <td class="" style="padding-left:20px;padding-bottom:20px;padding-right: 5px;text-align:left;color:#757575;font-size:14px;line-height:22px;mso-line-height:exactly;font-weight:400;margin-bottom:0;font-family:Calibri,sans-serif!important;">Chart of the Week 7/30: <a alias="An entrepenurial recovery" conversion="true" href="https://www.dws.com/en-us/insights/cio-view/charts-of-the-week/cotw-2021/chart-of-the-week-20210730/?sD=true&role=Professional" style="color:#009da2;font-size:14px;line-height:20px;mso-line-height:exactly;font-weight:400;margin-bottom:0;font-family:Calibri,sans-serif!important;" title="An entrepenurial recovery">An entrepreneurial recovery</a></td>
+</tr>
+    <tr>
+    <td class="" style="padding-left:20px;padding-bottom:20px;padding-right: 5px;text-align:left;color:#757575;font-size:14px;line-height:22px;mso-line-height:exactly;font-weight:400;margin-bottom:0;font-family:Calibri,sans-serif!important;">Chart of the Week 7/23: <a alias="An entrepenurial recovery" conversion="true" href="https://www.dws.com/en-us/insights/cio-view/charts-of-the-week/cotw-2021/chart-of-the-week-20210723/?sD=true&role=Professional" style="color:#009da2;font-size:14px;line-height:20px;mso-line-height:exactly;font-weight:400;margin-bottom:0;font-family:Calibri,sans-serif!important;" title="An entrepenurial recovery">Living beyond our means</a></td>
+</tr>
+    <tr>
+    <td class="" style="padding-left:20px;padding-bottom:20px;padding-right: 5px;text-align:left;color:#757575;font-size:14px;line-height:22px;mso-line-height:exactly;font-weight:400;margin-bottom:0;font-family:Calibri,sans-serif!important;">CIO Commodity Commentary: <a alias="An entrepenurial recovery" conversion="true" href="https://www.dws.com/en-us/insights/cio-view/asset-classes2/cio-commodity-commentary/202107-cio-commodity-commentary/?sD=true&role=Professiona" style="color:#009da2;font-size:14px;line-height:20px;mso-line-height:exactly;font-weight:400;margin-bottom:0;font-family:Calibri,sans-serif!important;" title="An OPEC+ agreement -- finally">An OPEC+ agreement -- finally</a></td>
+</tr><tr>
+    <td class="" style="padding-left:20px;padding-bottom:20px;text-align:left;color:#757575;padding-right: 5px;font-size:14px;line-height:22px;mso-line-height:exactly;font-weight:400;margin-bottom:0;font-family:Calibri,sans-serif!important;">DWS Insights Lab podcast: <a alias="An entrepenurial recovery" conversion="true" href="https://bcove.video/3j0wIzV" style="color:#009da2;font-size:14px;line-height:20px;mso-line-height:exactly;font-weight:400;margin-bottom:0;font-family:Calibri,sans-serif!important;" title="An entrepenurial recovery">New pathways with diversity, equity and inclusion</a></td>
+</tr>
+    <tr>
+    <td class="" style="padding-left:20px;padding-bottom:20px;padding-right: 5px;text-align:left;color:#757575;font-size:14px;line-height:22px;mso-line-height:exactly;font-weight:400;margin-bottom:0;font-family:Calibri,sans-serif!important;">DWS Insights Lab podcast: <a alias="An entrepenurial recovery" conversion="true" href="https://www.dws.com/en-us/insights/webcasts--conf-calls/?sD=true&role=Professional" style="color:#009da2;font-size:14px;line-height:20px;mso-line-height:exactly;font-weight:400;margin-bottom:0;font-family:Calibri,sans-serif!important;" title="An entrepenurial recovery">Archive</a></td>
+</tr>
+</table>
+<!-- HEADLINE END ||| -->
+    
+<!-- ||| LOCAL REFINEMENT START -->
+<table class="w100" width="640" border="0" align="center" cellpadding="0" cellspacing="0" style="border:solid 1px #000000; padding-left:10px;">
+<tr>
+<td align="center" style="padding-top:0px;">
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" > 
+<tr>
+    <td class="h1m" style="padding-left:10px;padding-top:20px;padding-bottom:10px;text-align:left;color:#000000;font-size:24px;font-family:Rockwell,serif!important;line-height:1.2em;text-decoration:none;">Calls and webinars</td>
+</tr>
+<tr>
+<td class="padb20m bradius" style="padding-bottom:0px;">  
+<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0" >
+<tr>
+<td align="left" style="padding-top:20px;padding-left:5px;">
+<table class="w100" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" >
+<tr>
+<td valign="top">
+<!-- COPY -->
+<table class="column33" width="160" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+<td class="h2m" style="text-align:left;color:#757575;font-size:14px;line-height:22px;mso-line-height:exactly;font-family:Calibri,sans-serif!important;">08.04.2021 | 10 a.m. ET</td>
+</tr>
+</table>
+<!-- COPY -->
+<table class="column33" width="280" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+<td class="h2m" style="text-align:left;color:#000000;font-size:14px;line-height:22px;mso-line-height:exactly;font-weight:bold;font-family:Calibri,sans-serif!important;">
+Webcast: Rise of the social pillar of ESG and implementation in passive portfolios</td>
+</tr>
+</table>
+<!-- COPY -->
+<table class="column33" width="90" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+<td class="h2m" style="padding-left:0px;text-align:left;font-size:14px;line-height:22px;mso-line-height:exactly;font-family:Calibri,sans-serif!important;"><a alias="Register" conversion="false" href="https://www.brighttalk.com/webcast/2163/498041" style="text-align:left;color:#009da2;font-size: 14px;line-height: 22px; mso-line-height: exactly; margin-bottom: 0px; font-family: Calibri,sans-serif!important;text-decoration:underline;" target="new" title="Register">Register &rarr;</a></td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="padb20m bradius" style="padding-bottom: 0px;">  
+<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0" >
+<tr>
+<td align="center" style="padding-top: 15px;padding-left:5px;">
+<table class="w100" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" >
+<tr>
+<td valign="top">
+<!-- COPY -->
+<table class="column33" width="160" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+<td class="h2m" style="text-align:left;color:#757575;font-size:14px;line-height:22px;mso-line-height:exactly;font-family:Calibri,sans-serif!important;">
+08.05.2021 |   2 p.m. ET</td>
+</tr>
+</table>
+<!-- COPY -->
+<table class="column33" width="280" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+<td class="h2m" style="text-align:left;color:#000000;font-size:14px;line-height:22px;mso-line-height:exactly;font-weight:bold;font-family:Calibri,sans-serif!important;">
+Call: Market Insights with David Bianco</td>
+</tr>
+</table>
+<!-- COPY -->
+<table class="column33" width="90" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+<td class="h2m" style="padding-left:0px;text-align:left;font-size:14px;line-height:22px;mso-line-height:exactly;font-family:Calibri,sans-serif!important;"><a alias="Register" conversion="false" href="https://edge.media-server.com/mmc/p/j9hg8wqa" style="text-align:left;color:#009da2;font-size: 14px;line-height: 22px; mso-line-height: exactly; margin-bottom: 0px; font-family: Calibri,sans-serif!important;text-decoration:underline;" target="new" title="#">Register &rarr;</a></td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="padb20m bradius" style="padding-bottom: 0px;">  
+<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0" >
+<tr>
+<td align="center" style="padding-top: 15px;padding-left:5px;">
+<table class="w100" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" >
+<tr>
+<td valign="top">
+<!-- COPY -->
+<table class="column33" width="160" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+<td class="h2m" style="text-align:left;color:#757575;font-size:14px;line-height:22px;mso-line-height:exactly;font-family:Calibri,sans-serif!important;">08.09.2021 | 11 a.m. ET</td>
+</tr>
+</table>
+<!-- COPY -->
+<table class="column33" width="280" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+<td class="h2m" style="text-align:left;color:#000000;font-size:14px;line-height:22px;mso-line-height:exactly;font-weight:bold;font-family:Calibri,sans-serif!important;">
+Call: Washington analysis, China and emerging markets—Frank Kelly and Sean Taylor</td>
+</tr>
+</table>
+<!-- COPY -->
+<table class="column33" width="90" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+<td class="h2m" style="padding-left:0px;text-align:left;font-size:14px;line-height:22px;mso-line-height:exactly;font-family:Calibri,sans-serif!important;"><a alias="Register" conversion="false" href="https://edge.media-server.com/mmc/p/wdxq6p29" style="text-align:left;color:#009da2;font-size: 14px;line-height: 22px; mso-line-height: exactly; margin-bottom: 0px; font-family: Calibri,sans-serif!important;text-decoration:underline;" target="new" title="Register">Register &rarr;</a></td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="padb20m bradius" style="padding-bottom: 20px;">  
+<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0" >
+<tr>
+<td align="center" style="padding-top: 15px;padding-left:5px;">
+<table class="w100" width="100%" align="center" border="0" cellspacing="0" cellpadding="0" >
+<tr>
+<td valign="top">
+<!-- COPY -->
+<table class="column33" width="160" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+<td class="h2m" style="text-align:left;color:#757575;font-size:14px;line-height:22px;mso-line-height:exactly;font-family:Calibri,sans-serif!important;">08.09.2021 | 4:15 p.m. ET
+</td>
+</tr>
+</table>
+<!-- COPY -->
+<table class="column33" width="280" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+<td class="h2m" style="text-align:left;color:#000000;font-size:14px;line-height:22px;mso-line-height:exactly;font-weight:bold;font-family:Calibri,sans-serif!important;">
+Zoom: Team IQ Practice Management – Mid-year business plan review</td>
+</tr>
+</table>
+<!-- COPY -->
+<table class="column33" width="90" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+<td class="h2m" style="padding-left:0px;text-align:left;font-size:14px;line-height:22px;mso-line-height:exactly;font-family:Calibri,sans-serif!important;"><a alias="Register" conversion="false" href="https://dws.zoom.us/meeting/register/tJcpduyhqzMiG9Kidux4PfC6VZW-YcDrD9od" style="text-align:left;color:#009da2;font-size: 14px;line-height: 22px; mso-line-height: exactly; margin-bottom: 0px; font-family: Calibri,sans-serif!important;text-decoration:underline;" target="new" title="Register">Register &rarr;</a></td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- LOCAL REFINEMENT END ||| -->
+<!-- ||| 2COL COMMENTARIES START -->
+<table class="w100"width="640"border="0"align="center"cellpadding="0"cellspacing="0" style="border: solid 1px #000000;padding-left:20px;padding-bottom:20px;">
+
+<!--%%[
+SET @Subs = AttributeValue('Contact_ID')
+SET @buttons = LookupOrderedRows("Master_DE - Copy",20,"EmailAddress","Contact_ID",@Subs)
+FOR @i=1 TO ROWCOUNT(@buttons) DO
+SET @title = FIELD(Row(@buttons,@i), 'Campaign_Name')
+SET @link = FIELD(Row(@buttons,@i), 'Link')
+]%%-->
+<tr>
+<td valign="top">
+<table class="column50" width="300" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+<td align="left" style="padding-top:20px;padding-bottom:10px;">
+<table class="w100m" width="97%" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+<!-- HEADLINE -->
+<td class="h1m" style="padding-left:15px;padding-top:10px;padding-bottom:10px;text-align:left;color:#000000;font-size:20px;font-family:Rockwell,serif!important;line-height:1.2em;text-decoration:none;"> <a href="%%=RedirectTo(@link)=%%" alias="%%=v(@Alias)=%%" style="text-align:left;text-align:left;color:#000000;font-size:20px;font-family:Rockwell,serif!important;line-height:1.2em;text-decoration:none;">%%=v(@title)=%%</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--[if mso]></td><td valign="top"><![endif]-->
+<table class="column50" width="300" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+<td align="right" style="padding-top:20px;padding-bottom:10px;">
+<table class="w100m" width="97%" border="0" align="right" cellpadding="0" cellspacing="0" >
+<tr>
+<!-- HEADLINE -->
+<td class="h1m" style="padding-left:15px;padding-top:10px;padding-bottom:10px;text-align:left;color:#000000;font-size:20px;font-family:Rockwell,serif!important;line-height:1.2em;text-decoration:none;"> <a href="%%=RedirectTo(@link)=%%" alias="%%=v(@Alias)=%%" style="text-align:left;text-align:left;color:#000000;font-size:20px;font-family:Rockwell,serif!important;line-height:1.2em;text-decoration:none;">%%=v(@title)=%%</a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+<!-- 2COL - 2IMAGE END ||| -->
+
+<!-- ||| 1 COL START -->
+<table role="presentation"width="640" border="0" align="center"cellpadding="0" cellspacing="0" class="w100" style="border:solid 1px #000000;"> 
+<tr>
+<td class="h1m" style="padding-left:20px;padding-top:20px;padding-bottom:0px;text-align:left;color:#56AEB1;font-size:16px;line-height:24px;font-family:Rockwell,serif!important;text-decoration: none;">Practice Management: Team IQ</td>
+</tr>
+<tr>
+    <td class="h1m" style="padding-left:20px;padding-top:10px;padding-bottom:10px;text-align:left;color:#000000;font-size:24px;font-family:Rockwell,serif!important;line-height:1.2em;text-decoration:none;">
+   Foster team success with tools to enhance group dynamics, practice management and accountability</td>
+</tr>
+
+    <tr><td class="" style="padding-left:20px;padding-bottom:10px;padding-right:20px;text-align:left;color:#757575;font-size:14px;line-height:22px;mso-line-height:exactly;font-weight:400;margin-bottom:0;font-family:Calibri,sans-serif!important;">Don’t miss a single update from DC expert Frank Kelly, our global CIO team, portfolio managers and other experts. Curate your own DWS research and intellectual capital experience by visiting the DWS subscription center and choosing the people and topics you would like to follow.</td></tr>
+<tr>
+<td class="h1m" style="padding-left:20px;padding-top:10px;padding-bottom:20px;text-align:left;color:#56AEB1;font-size:18px;line-height:24px;font-family:Rockwell,serif!important;text-decoration: none;"> <a alias="#" conversion="false" href="#" style="text-align:left;color:#009da2;font-size:14px;line-height: 22px; mso-line-height: exactly;margin-bottom: 0px;font-family:Calibri,sans-serif!important; text-decoration: underline;" title="#">Learn More &rarr;</a> </td>
+</tr>
+</table>
+<!-- 1 COL END ||| -->
+
+<!-- ||| COPY START -->
+<table role="presentation"width="640" border="0" align="center"cellpadding="0" cellspacing="0" class="w100">
+  <tr>
+<td class="copy" style="border: solid 1px #000000; padding-left:20px; padding-top:20px; padding-bottom:20px;text-align:left; color: #000000;font-size: 18px; font-family:Rockwell,serif;line-height: 1.2em;text-decoration: none;">
+               CIO VIEW: <a alias="Global_Insights" conversion="true" href="https://www.dws.com/en-us/insights/cio-view/?sD=true&role=Professional" style="color:#009da2;font-size:14px;line-height:22px;mso-line-height:exactly;font-weight:400;margin-bottom:0;font-family:Calibri,sans-serif!important;" title="Global Insights">Global Insights</a> | <a alias="Americas_Insights" conversion="true" href="https://www.dws.com/en-us/insights/cio-view/?sD=true&role=Professional"style="color:#009da2;font-size:14px;line-height:22px;mso-line-height:exactly;font-weight:400;margin-bottom:0;font-family:Calibri,sans-serif!important;" title="Americas Insights">Americas Insights</a>
+               <p class="copy" style="padding-top:5px;text-align:left;color:#757575;font-size:14px;line-height:22px;mso-line-height:exactly;font-weight:400;margin-bottom:0;font-family:Calibri,sans-serif!important;">Don't miss out: <a alias="GLobal_Insights" conversion="true" href="https://outlook.dws.com/subscription-center" style="color:#009da2;font-size:14px;line-height:20px;mso-line-height: exactly;font-weight:400;margin-bottom:0;font-family:Calibri,sans-serif!important;" title="Suscribe">Subscribe to receive insights</a> the week they are posted.</p>
+               <p class="copy" style="padding-top:5px;text-align:left;color:#757575;font-size:14px;line-height:22px;mso-line-height:exactly;font-weight:400;margin-bottom:0;font-family:Calibri,sans-serif!important;"> Thank you for choosing DWS.</p>
+                   
+                     <p class="copy" style="padding-top:20px;text-align:left;color:#757575;font-size:14px;line-height:22px;mso-line-height:exactly;font-weight:400;margin-bottom:0;font-family:Calibri,sans-serif!important;">
+                 For additional information, please visit 
+                       <a alias="DWS" conversion="true" href="http://www.dws.com/en-us/?sD=true&role=Professional" style="color:#009da2;font-size:14px;line-height:20px;mso-line-height: exactly;font-weight:400;margin-bottom:0;font-family:Calibri,sans-serif!important;" title="DWS.com">dws.com</a>   or call <a href="tel:8006211148" style="color:#009da2;font-size:14px;line-height:20px;mso-line-height: exactly;font-weight:400;margin-bottom:0;font-family:Calibri,sans-serif!important;">(800) 621-1148</a>.
+    </p>
+      </td>
+    </tr>
+</table>
+<!-- COPY END ||| --> 
+<!-- ||| DWS FOOTER START -->
+<table role="presentation"class="w100" width="640" border="0" align="center"cellpadding="0" cellspacing="0" style="width:640px;background-color:#000000;padding-left:20px;padding-right:20px;">
+<tr>
+<td class="padb20m" align="center"style="padding-top: 20px; padding-bottom: 20px;">
+<table role="presentation"width="100%" border="0" align="center"cellpadding="0" cellspacing="0" >
+<tr>
+<td align="center">
+<table role="presentation"class="w100" width="100%" align="center"border="0" cellspacing="0" cellpadding="0" >
+<tr>
+<td valign="top">
+<!--[if mso]></td><td valign="top"><![endif]-->
+</td>
+</tr>
+</table>
+</td>
+</tr>
+    
+<tr>
+<td align="left" style="padding-top:10px;padding-bottom:30px;">
+<table role="presentation"border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+
+<!-- ICON -->
+<td align="center"style="padding-left: 5px; padding-right: 5px;"><a href="http://www.twitter.com/dws_group" alias="DWS Twitter" conversion="true" data-linkto="https://"><img src="https://image.insight.dws.com/lib/fe4511707564057d751474/m/2/4b8bf581-7dcc-41ba-b455-e97d946937cc.png" width="35" height="35" alt="" style="display: block; border: 0; height: 35px; width: 35px;" class="linkopacity"/></a></td>
+
+<!-- ICON -->
+<td align="center"style="padding-left: 5px; padding-right: 5px;"><a href="https://www.linkedin.com/company/dws-group-com" alias="DWSLinkedIn" conversion="true" data-linkto="https://"><img src="https://image.insight.dws.com/lib/fe4511707564057d751474/m/2/66c323c9-31fe-4f44-9442-2b37fb6ca0d4.png" width="35" height="35" alt="" style="display: block; border: 0; height: 35px; width: 35px;" class="linkopacity"/></a></td>
+</tr>
+</table>
+</td>
+</tr>  
+<!-- COPY --><tr>
+<td class="" style="padding-top:0px;padding-left:5px;text-align:left;color:#FFFFFF;font-size: 14px;font-family:Calibri,sans-serif!important; font-weight:normal; line-height: 1.4em;"><b>For institutional use and registered representative use only. Not for public viewing or distribution.</b><br>
+<br><b>Past performance does not guarantee future returns.</b><br>
+<br><b>DWS and Team Edge are not affiliated.</b></td>
+</tr>
+<tr>
+    <td class="" style="padding-top:20px;padding-left:5px;text-align:left;color:#FFFFFF;font-size:14px;font-family:Calibri,sans-serif!important; font-weight:normal; line-height: 1.4em;"><b>DWS Distributors, Inc.</b><br>222 South Riverside Plaza, Chicago, IL 60606-5808<br>
+Email: <a alias="DWSrep@dws.com" conversion="true" href="mailto:rep@dws.com" style="text-align:left;color:#009da2;font-size:14px;line-height: 22px; mso-line-height: exactly; margin-bottom: 0px; font-family:Calibri,sans-serif!important;" title="DWS">rep@dws.com</a> | Tel: <a alias="DWS rep@dws.com" conversion="true" href="tel:8006211148" style="text-align:left;color:#009da2;font-size:14px;line-height:22px;mso-line-height:exactly;margin-bottom:0px;font-family:Calibri,sans-serif!important;" title="DWS">(800) 621-1148</a><br><a alias="DWS" conversion="true" href="https://dws.com/en-us/" style="text-align:left;color:#009da2;font-size:14px;line-height: 22px; mso-line-height: exactly; margin-bottom: 0px; font-family:Calibri,sans-serif!important;" title="DWS">www.dws.com</a><br>
+</td>
+</tr>    
+<tr>
+    <td class="" style="padding-top:20px;padding-left:5px;text-align:left;color:#FFFFFF;font-size:14px;font-family:Calibri,sans-serif!important; font-weight:normal; line-height: 1.4em;"><b>Important Risk Information</b><br>
+Investing in mutual funds involve risk. Stocks may decline in value. Bond investments are subject to interest rate, credit, liquidity and market risks to varying degrees. Credit risk refers to the ability of an issuer to make timely payments of principal and interest. Investing in derivatives entails special risks relating to liquidity, leverage and credit that may reduce returns and/or increase volatility. Investing in foreign securities, particularly those of emerging markets, presents certain risks, such as currency fluctuations, political and economic changes, and market risks. There are additional risks associated with investing in commodities, high-yield bonds, aggressive growth stocks, non-diversified/concentrated funds and small- and midcap stocks which are more fully explained in the prospectuses. Please read the prospectus for more information.
+</td>
+</tr>    
+<tr>
+    <td class="" style="padding-top:20px;padding-left:5px;text-align:left;color:#FFFFFF;font-size:14px;font-family:Calibri,sans-serif!important; font-weight:normal; line-height: 1.4em;"><b>Obtain a prospectus</b></td>
+</tr>
+<!-- COPY -->
+<tr>
+<td class="" style="padding-top:20px;padding-left:5px;text-align:left;color:#FFFFFF;font-size: 14px;font-family:Calibri,sans-serif!important; font-weight:normal; line-height: 1.4em;">To obtain a summary prospectus, if available, or prospectus, download one from <a alias="DWS" conversion="true" href="https://dws.com/en-us/" style="text-align:left;color:#FFFFFF;font-size:14px;line-height: 22px;mso-line-height:exactly; margin-bottom: 0px; font-family:Calibri,sans-serif!important;" title="DWS">dws.com</a> for more information regarding the funds/products objectives, risks, charges and expenses.
+<br><br>
+Not FDIC/NCUA insured. May lose value. No bank guarantee. Not a deposit. Not insured by any federal government agency.
+<br><br>
+The brand DWS represents DWS Group GmbH & Co. KGaA and any of its subsidiaries, such as DWS Distributors, Inc., which offers investment products, or DWS Investment Management Americas Inc. and RREEF America L.L.C., which offer advisory services.
+<br><br>
+View our <a alias="DWS" conversion="true" href="https://fundsus.dws.com/EN/privacy-policy.jsp" style="text-align:left;color:#009da2;font-size:14px;line-height: 22px; mso-line-height:exactly;margin-bottom:0px;font-family:Calibri,sans-serif!important;" title="#">privacy policy</a>, <a alias="DWS" conversion="true" href="https://fundsus.dws.com/us/en-us/legal-resources.html" style="text-align:left;color:#009da2;font-size:14px;line-height: 22px; mso-line-height:exactly;margin-bottom:0px;font-family:Calibri,sans-serif!important;" title="#">legal informationy</a> and <a alias="DWS" conversion="true" href="https://fundsus.dws.com/EN/security.jsp" style="text-align:left;color:#009da2;font-size:14px;line-height: 22px; mso-line-height:exactly;margin-bottom:0px;font-family:Calibri,sans-serif!important;" title="#">security statement</a>.</td>
+</tr>
+<!-- COPY --> 
+<tr>
+<td class="" style="padding-top:20px;padding-left:5px;text-align:left;color:#FFFFFF;font-size: 14px;font-family:Calibri,sans-serif!important; font-weight:normal; line-height: 1.4em;">&copy; %%xtyear%% DWS Group GmbH & Co. KGaA. All rights reserved.  R-039789-8 (8/21)</td>
+</tr>
+
+</table>
+</td>
+</tr>
+</table>
+<!-- DWS FOOTER END ||| -->
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>
