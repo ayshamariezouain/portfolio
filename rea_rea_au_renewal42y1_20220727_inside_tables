@@ -1,0 +1,687 @@
+%%[ SET @LogoID_Cinch_Header_Default = CONCAT("https://image.e.cinchhomeservices.com/lib/fe9215737263007e71/m/2/f9f26877-176b-4651-92e8-3b874f438607.png") ]%%
+%%[ IF EMPTY(@LogoID_Cinch_Header_Default) THEN]%%
+<!-- CINCH IMAGE -->
+<table width="640" border="0" align="center" cellpadding="0" cellspacing="0" class="w100">
+<tr>
+<td align="center" style="padding-top: 0px; padding-bottom: 0px;"><img src="https://image.e.cinchhomeservices.com/lib/fe9215737263007e71/m/2/44f59b08-5037-40ec-9976-f734e9f2cdd5.png" width="640" alt="Thank you for letting us help protect you over the last year." style="display: block; border: 0px; max-width: 100%;" class="resize"/></td>
+</tr>
+</table>
+%%[ENDIF]%%
+
+%%[IF Logo ID == "85" THEN]%%
+<!-- LONG & FOSTER IMAGE -->
+<table width="640" border="0" align="center" cellpadding="0" cellspacing="0" class="w100">
+<tr>
+<td align="center" style="padding-top: 0px; padding-bottom: 0px;"><img src="https://image.e.cinchhomeservices.com/lib/fe9215737263007e71/m/2/cf8c5a24-09e6-4c1a-8d1f-2dde06487a33.png" width="640" alt="Thank you for letting Long & Foster help protect you over the last year through a Cinch Home Protection Plan." style="display: block; border: 0px; max-width: 100%;" class="resize"/></td>
+</tr>
+</table>
+%%[ELSE]%%
+<table width="640" border="0" align="center" cellpadding="0" cellspacing="0" class="w100">
+<tr>
+<td align="center" style="padding-top: 0px; padding-bottom: 0px;"><img src="https://image.e.cinchhomeservices.com/lib/fe9215737263007e71/m/2/44f59b08-5037-40ec-9976-f734e9f2cdd5.png" width="640" alt="Thank you for letting us help protect you over the last year." style="display: block; border: 0px; max-width: 100%;" class="resize"/></td>
+</tr>
+</table>
+%%[ENDIF]%% 
+
+%%[
+SET @ExpirationDate = [Expiration Date]
+SET @FormattedDate = FormatDate(@ExpirationDate, "s")
+]%%
+<table role="presentation" class="w100" width="640" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" style="padding-bottom: 10px; padding-top: 10px;">
+   <table role="presentation" width="640" border="0" align="center" cellpadding="0" cellspacing="0" class="w100">
+<tr>
+  <td class="font" style="padding-top: 0px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px; text-align: center; font-size: 28px; line-height: 34px; color: #686d77; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-weight: normal;">STAY PROTECTED. <br> YOUR %%[IF Logo ID != "85" THEN]%% CINCH HOME PROTECTION %%[ELSE]%% %%[ENDIF]%% PLAN EXPIRES ON <span style="color: #28CD50;">%%=v(@FormattedDate)=%%</span>.</td>
+    </tr> 
+
+     <tr>
+  <td class="font" style="padding-top: 0px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; text-align: center; font-size: 22px; line-height: 28px; color: #686d77; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-weight: bold; ">Your new annual renewal plan has expanded coverage
+and more. See highlights of changes below!</td>
+    </tr> 
+</table>
+  </td>
+</tr> 
+</table>
+
+<!-- ||| URL is driven by Logo ID ||| -->
+%%[
+var @PZip 
+set @PZip = [Property ZIP]
+set @lengthPZip = Length(@PZip)
+
+IF @lengthPZip == "4" THEN
+
+set @PropertyZip = Concat("0", @PZip)
+ELSE
+set @PropertyZip = @PZip
+ENDIF
+]%% 
+
+%%[
+SET @TPCinch = "(888) 488-9624"
+SET @TPLF = "(877) 710-5095"
+
+SET @TELCinch = "tel://1-888-488-9624"
+SET @TFNCinch = concat('tel:+1','888-488-9624')
+SET @TELLF = "tel://1-877-710-5095"
+SET @TFNLF = concat('tel:+1','877-710-5095')
+SET @TELW = "tel://1-866-439-7768"
+SET @TFNW = concat('tel:+1','866-439-7768')
+
+VAR @RenewURL_Default
+SET @RenewURL_Default = "https://enroll.cinchhomeservices.com/renewal/"
+SET @RenewURL_Default = CONCAT(@RenewURL_Default, "?pl_logo=%%Logo ID%%&utm_content=%%Logo ID%%&contractNumber=%%Contract number%%&zipCode=%%=v(@PropertyZip)=%%")
+
+SET @RenewURL_Default1 = "https://enroll.cinchhomeservices.com/renewal/?pl_logo=8&utm_content=%%Logo ID%%&contractNumber=%%Contract number%%&zipCode=%%=v(@PropertyZip)=%%"
+]%%
+<!-- ||| START SAMPLE CONTRACT -->
+<table role="presentation" class="w100" width="640" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" style="padding-bottom: 20px; padding-top: 10px;">
+<table role="presentation" width="640" border="0" align="center" cellpadding="0" cellspacing="0" class="w100">
+%%[IF Logo ID == "85" THEN]%% 
+<tr>
+  <td style="padding-top: 0px; padding-bottom: 15px; padding-left: 20px; padding-right: 20px; text-align: center; font-size: 14px; line-height: 28px; color: #686d77; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-weight: normal; text-decoration: underline;">
+    <a href="https://sample-terms-docs.cinchhs.com/CINCHP3_1221_RE_RNWL_LF.PDF" alias="sample_contract_txt" style="color: #686d77; text-decoration: underline; font-weight: bold;">View new sample annual contract</a>
+  </td>
+</tr>
+  %%[ELSE]%% 
+<tr>
+  <td style="padding-top: 0px; padding-bottom: 15px; padding-left: 20px; padding-right: 20px; text-align: center; font-size: 14px; line-height: 28px; color: #686d77; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-weight: normal; text-decoration: underline;">
+    <a href="https://sample-terms-docs.cinchhs.com/CINCHP3_1221_RE_RNWL.PDF" alias="sample_contract_txt" style="color: #686d77; text-decoration: underline; font-weight: bold;">View new sample annual contract</a>
+  </td>
+</tr>
+%%[ENDIF]%%
+</table>
+<!-- ||| END SAMPLE CONTRACT -->
+
+
+%%[IF Logo ID == "85" THEN]%% 
+<!-- ||| BUTTON START -->
+<table width="640" border="0" align="center" cellpadding="0" cellspacing="0" class="w100">
+<tr>
+<td align="center" style="padding-top: 20px; padding-bottom: 10px; border-top: 1px solid #28CD50;border-bottom: 1px solid #28CD50; border-left: 1px solid #28CD50; border-right: 1px solid #28CD50;">
+<table class="w90m" border="0" align="center" cellpadding="0" cellspacing="0" >
+  <!-- BUTTON -->
+<tr>
+<td class="font bradius" align="center" style="background-color: #686d77; padding-top: 10px; padding-bottom: 10px; padding-left: 75px; padding-right: 75px; font-size: 15px; color: #FFFFFF; font-family: 'Mark OT', Arial, Helvetica, sans-serif; text-align: center; font-weight: bold;"><a href="%%=redirectto(@RenewURL_Default)=%%" alias="renew_here_txt" style="color: #FFFFFF; text-decoration: none; text-transform: uppercase;"><span style="display: block; width: 100%;">Renew here</span></a></td>
+</tr><!-- BUTTON END ||| -->
+</table>
+
+    %%[ELSEIF Logo ID == "66" AND Contract year == "0" THEN]%% 
+<!-- ||| BUTTON START -->
+<table width="640" border="0" align="center" cellpadding="0" cellspacing="0" class="w100">
+<tr>
+<td align="center" style="padding-top: 20px; padding-bottom: 10px; border-top: 1px solid #28CD50;border-bottom: 1px solid #28CD50; border-left: 1px solid #28CD50; border-right: 1px solid #28CD50;">
+<table class="w90m" border="0" align="center" cellpadding="0" cellspacing="0" >
+  <!-- BUTTON -->
+<tr>
+<td class="font bradius" align="center" style="background-color: #686d77; padding-top: 10px; padding-bottom: 10px; padding-left: 75px; padding-right: 75px; font-size: 15px; color: #FFFFFF; font-family: 'Mark OT', Arial, Helvetica, sans-serif; text-align: center; font-weight: bold;"><a href="%%=redirectto(@RenewURL_Default)=%%" alias="renew_here_txt" style="color: #FFFFFF; text-decoration: none; text-transform: uppercase;"><span style="display: block; width: 100%;">Renew here</span></a></td>
+</tr><!-- BUTTON END ||| -->
+</table>
+%%[ELSE]%% 
+<!-- ||| BUTTON START -->
+<table width="640" border="0" align="center" cellpadding="0" cellspacing="0" class="w100">
+<tr>
+<td align="center" style="padding-top: 20px; padding-bottom: 10px; border-top: 1px solid #28CD50;border-bottom: 1px solid #28CD50; border-left: 1px solid #28CD50; border-right: 1px solid #28CD50;">
+<table class="w90m" border="0" align="center" cellpadding="0" cellspacing="0" >
+  <!-- BUTTON -->
+<tr>
+<td class="font bradius" align="center" style="background-color: #686d77; padding-top: 10px; padding-bottom: 10px; padding-left: 75px; padding-right: 75px; font-size: 15px; color: #FFFFFF; font-family: 'Mark OT', Arial, Helvetica, sans-serif; text-align: center; font-weight: bold;"><a href="%%=redirectto(@RenewURL_Default1)=%%" alias="renew_here_txt" style="color: #FFFFFF; text-decoration: none; text-transform: uppercase;"><span style="display: block; width: 100%;">Renew here</span></a></td>
+</tr><!-- BUTTON END ||| -->
+</table>
+
+%%[ENDIF]%%
+
+
+
+%%[IF Logo ID == "85" THEN]%%  
+<table role="presentation" class="w90" width="640" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" style="padding-bottom: 5px; padding-top: 10px;">
+   <table role="presentation" width="440" border="0" align="center" cellpadding="0" cellspacing="0" class="w90">
+ <tr>
+  <td class="font" style="padding-top: 5px; padding-bottom: 0px; padding-left: 20px; padding-right: 20px; text-align: center; font-size: 18px; line-height: 22px; color: #28CD50; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-weight: bold;">or call <a href="tel:+18777105095" style="color: #28CD50;">(877) 710-5095</a></td>
+     </tr>      
+</table>
+</td>
+</tr> 
+</table>
+%%[ELSEIF Logo ID == "66" AND Contract year == "0" THEN]%%
+<table role="presentation" class="w90" width="640" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" style="padding-bottom: 5px; padding-top: 10px;">
+   <table role="presentation" width="440" border="0" align="center" cellpadding="0" cellspacing="0" class="w90">
+ <tr>
+  <td class="font" style="padding-top: 5px; padding-bottom: 0px; padding-left: 20px; padding-right: 20px; text-align: center; font-size: 18px; line-height: 22px; color: #28CD50; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-weight: bold;">or call <a href="tel:+18664397768" style="color: #28CD50;">(866) 439-7768</a></td>
+     </tr>      
+</table>
+</td>
+</tr> 
+</table>
+%%[ELSE]%%
+<table role="presentation" class="w90" width="640" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" style="padding-bottom: 5px; padding-top: 10px;">
+   <table role="presentation" width="440" border="0" align="center" cellpadding="0" cellspacing="0" class="w90">
+ <tr>
+  <td class="font" style="padding-top: 5px; padding-bottom: 0px; padding-left: 20px; padding-right: 20px; text-align: center; font-size: 18px; line-height: 22px; color: #28CD50; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-weight: bold;">or call <a href="tel:+18884889624" style="color: #28CD50;">(888) 488-9624</a></td>
+     </tr>      
+</table>
+</td>
+</tr> 
+</table>
+%%[ENDIF]%%
+</td>
+</tr>
+</table>
+ 
+</td>
+</tr> 
+</table>    
+
+%%[
+SET @Current_Cov_Summ = [Current_Cov_Summ]
+SET @RNWL_Cov_Summ = [RNWL_Cov_Summ]
+SET @CurrentPriceTotal = [Current total price]
+SET @RenewalPriceTotal = [Renewal price in total]
+SET @CurrentDeductible = [Current deductible]
+SET @RenewalDeductible = [Renewal deductible]
+SET @ReplacementDeductible = [Replacement Deductible]
+SET @PropertyStreetAddress = [Property Street Address]
+SET @PropertyState = [Property State]
+SET @PropertyCity = [Property City]
+SET @DivideBy12 = 12
+SET @NewRenewalPrice = Divide(@RenewalPriceTotal, @DivideBy12)
+
+SET @RenewalOptionsIncluded = [Renewal Options Included]
+
+IF NOT EMPTY(@RenewalOptionsIncluded) THEN
+SET @Rows = BuildRowSetFromString(@RenewalOptionsIncluded, " ")
+SET @Premier = Field(Row(@Rows, 1), 1)
+
+ELSE ENDIF
+
+IF NOT EMPTY(@ReplacementOptionsIncluded) THEN
+SET @Rows = BuildRowSetFromString(@ReplacementOptionsIncluded, " ")
+SET @Premier = Field(Row(@Rows, 1), 1)
+
+ELSE ENDIF
+
+SET @FormatNewRenewalPrice = FormatNumber(@NewRenewalPrice,"C2","en-US")
+SET @FormatRenewalDeductible = FormatNumber(@RenewalDeductible,"C2","en-US")
+]%%
+
+%%[IF @CurrentPriceTotal != @RenewalPriceTotal THEN]%%
+%%[ENDIF]%%
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td align="center" style="padding-top: 15px;"></td></tr>
+</table>
+<table role="presentation" class="w100" width="640" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" style="padding-bottom: 10px; padding-top: 10px; border-top: 1px solid #28CD50; border-bottom: 1px solid #28CD50; border-left: 1px solid #28CD50; border-right: 1px solid #28CD50;">
+<table width="640" border="0" align="center" cellpadding="0" cellspacing="0" class="w90">
+<tr>
+  <td class="font" style="padding-top: 10px; padding-bottom: 15px; text-align: center; color: #686d77; font-size: 22px; font-family: 'Mark OT', Arial, Helvetica, sans-serif; line-height: 26px;">Your new annual renewal plan and deductible details:</td>
+</tr>
+</table>
+<!-- ||| 2 COL START -->
+<table class="w90" width="640" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top">
+
+<table class="column50" width="319" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+<td>
+<table class="w100m" width="97%" border="0" align="left" cellpadding="0" cellspacing="0" role="presentation">
+<tr>
+<!-- HEADLINE -->
+<td class="font" style="padding-left: 17px; padding-top: 10px; text-align: left; font-size: 16px; line-height: 20px; color: #686d77; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-weight: normal; text-transform: uppercase;">Covered property:</td>
+</tr>
+<tr>
+<!-- COPY -->
+<td class="font" style="padding-left: 17px; padding-top: 5px; text-align: left; color: #686d77; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px; font-weight: bold;">%%=ProperCase(@PropertyStreetAddress)=%%,
+%%=ProperCase(@PropertyCity)=%%, %%Property State%%, %%[
+VAR @PZip 
+SET @PZip = [Property ZIP]
+SET @lengthPZip = Length(@PZip)
+
+IF @lengthPZip == "4" THEN
+
+SET @PropertyZip = Concat("0", @PZip)
+ELSE
+SET @PropertyZip = @PZip
+ENDIF
+]%% 
+%%=v(@PropertyZip)=%%<br>
+  </td>
+</tr>
+<tr>
+<!-- COPY -->
+<td class="font" style="padding-left: 17px; padding-top: 10px; text-align: left; color: #686d77; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; text-transform: uppercase;">Renewal date:</td>
+</tr>
+<tr>
+<!-- COPY -->
+<td class="font" style="padding-left: 17px; padding-top: 10px; text-align: left; color: #686d77; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; font-weight: bold;">%%[ SET @RENEWALDATE = [RENEWAL DATE] SET @FormattedDate = FormatDate(@RENEWALDATE, "s") ]%% %%=v(@FormattedDate)=%% </td>
+</tr>
+<tr>
+<!-- COPY -->
+<td class="font" style="padding-left: 17px; padding-right: 17px; padding-top: 10px; padding-bottom: 0px; text-align: left; color: #686d77; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; font-weight: bold; font-style: italic;">So you’ll never lose protection, your plan will automatically renew each year.</td>
+</tr>  
+<tr>
+<!-- COPY -->
+<td class="font" style="padding-left: 17px; padding-top: 10px; text-align: left; color: #727272; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; text-transform: uppercase;">Plan number:</td>
+</tr> 
+  <tr>
+<!-- COPY -->
+<td class="font" class="padb0m" style="padding-left: 17px; padding-top: 10px; padding-bottom: 20px; text-align: left; color: #727272; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px; font-weight: bold;">%%Contract number%%</td>
+</tr> 
+</table>
+</td>
+</tr>
+</table>
+
+<!--[if mso]></td><td valign="top"><![endif]-->
+
+<table class="column50" width="319" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+<td align="right">
+<table class="w100m" width="97%" border="0" align="right" cellpadding="0" cellspacing="0" role="presentation">
+<tr>
+<!-- HEADLINE -->
+<td class="font" class="padt0m" style="padding-left: 17px; padding-top: 10px; text-align: left; font-size: 16px; line-height: 20px; color: #686d77; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-weight: normal; text-transform: uppercase;">Monthly premium:</td>
+</tr>
+<tr>
+<!-- COPY -->
+<td class="font" style="padding-left: 17px; padding-right: 17px; padding-top: 5px; text-align: left; color: #686d77; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; font-weight: bold;">%%=v(@FormatNewRenewalPrice)=%%</td>
+</tr>
+<tr>
+<!-- COPY -->
+<td class="font" style="padding-left: 17px; padding-right: 17px; padding-top: 0px; text-align: left; color: #686d77; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; font-weight: bold; font-style: italic;">Includes base plan plus any optional coverage that was added to your current plan.</td>
+</tr>
+<tr>
+<!-- COPY -->
+<td class="font" style="padding-left: 17px; padding-right: 17px; padding-top: 10px; text-align: left; color: #686d77; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px;">REPAIR DEDUCTIBLE:</td>
+</tr>
+<tr>
+<!-- COPY -->
+<td class="font" style="padding-left: 17px; padding-right: 17px; padding-top: 5px; text-align: left;color: #686d77; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; font-weight: bold;">$%%Renewal Deductible%%</td>
+</tr>
+  
+
+
+
+
+
+%%[IF (NOT EMPTY(@ReplacementDeductible) AND @ReplacementDeductible != "0") THEN]%%
+<tr>
+<!-- COPY -->
+<td class="font" style="padding-left: 17px; padding-right: 17px; padding-top: 10px; text-align: left; color: #686d77; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px;">REPLACEMENT DEDUCTIBLE: 
+</td>
+</tr>
+<tr>
+<!-- COPY -->
+<td class="font" style="padding-left: 17px; padding-right: 17px; padding-top: 5px; text-align: left; color: #686d77; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-size: 16px; line-height: 20px; font-weight: bold;">
+$%%Incremental Replacement Deductible%%</td>
+</tr>
+<tr>
+<!-- COPY -->
+<td class="font" style="padding-left: 17px; padding-right: 17px; padding-top: 10px; padding-bottom: 10px; text-align: left; color: #686d77; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; font-weight: bold; font-style: italic;">Due in addition to repair deductible if a full replacement of your covered item is needed.</td>
+</tr>
+%%[ELSE]%%
+%%[ENDIF]%%
+
+</table>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+<!-- 2 COL END ||| -->
+  </td>
+  </tr>
+</table>  
+
+<table role="presentation" width="640" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
+<tr>
+  <td class="font" style="padding-top: 10px; padding-bottom: 10px; padding-left: 140px; padding-right: 140px; text-align:"></td>
+</tr>
+</table>
+
+<table class="w100" width="640" border="0" align="center" cellpadding="0" cellspacing="0" style="background-color: #28CD50;" role="presentation">
+<tr>
+  <!-- HEADLINE -->
+  <td class="font" style="padding-top: 10px; padding-bottom: 10px; text-align: center; color: #FFFFFF; font-size: 16px; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-weight: bold; line-height: 20px;">SOME CHANGES TO YOUR RENEWAL PLAN INCLUDE:</td>
+</tr>
+</table> 
+<!-- ||| START -->
+<table class="w100" width="640" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" style="padding-top: 5px; background-color: #f7f7f7;">
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" >
+<tr>
+<td class="bradius" style="padding-top: 10px; padding-bottom: 10px;">
+<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0" >
+<tr>
+<!-- IMAGE -->
+<td width="25" align="center" style="padding-right: 15px;"><img src="https://image.e.cinchhomeservices.com/lib/fe9215737263007e71/m/1/86bf6663-e736-4f0b-aebe-3f93c04a829a.png" width="25" alt="check" style="display: block; border: 0;" class="resize"/></td>
+<td>
+<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+<!-- HEADLINE -->
+<td class="font" style="padding-left: 10px; text-align: left; font-size: 16px; line-height: 20px; color: #686d77; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-weight: normal;">Expanded coverage for over 30 new parts and components</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- END ||| -->
+ <!-- ||| START -->
+<table class="w100" width="640" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" style="padding-top: 5px;">
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" >
+<tr>
+<td class="bradius" style="padding-top: 10px; padding-bottom: 10px;">
+<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0" >
+<tr>
+<!-- IMAGE -->
+<td width="25" align="center" style="padding-right: 15px;"><img src="https://image.e.cinchhomeservices.com/lib/fe9215737263007e71/m/1/86bf6663-e736-4f0b-aebe-3f93c04a829a.png" width="25" alt="check" style="display: block; border: 0;" class="resize"/></td>
+<td>
+<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+<!-- HEADLINE -->
+<td class="font" style="padding-left: 10px; text-align: left; font-size: 16px; line-height: 20px; color:  #686d77; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-weight: normal;">Fewer exclusions and restrictions, such as concrete-encased plumbing</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- END ||| -->
+ <!-- ||| START -->
+<table class="w100" width="640" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" style="padding-top: 5px; background-color: #f7f7f7;">
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" >
+<tr>
+<td class="bradius" style="padding-top: 10px; padding-bottom: 10px;">
+<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0" >
+<tr>
+<!-- IMAGE -->
+<td width="25" align="center" style="padding-right: 15px;"><img src="https://image.e.cinchhomeservices.com/lib/fe9215737263007e71/m/1/86bf6663-e736-4f0b-aebe-3f93c04a829a.png" width="25" alt="check" style="display: block; border: 0;" class="resize"/></td>
+<td>
+<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+<!-- HEADLINE -->
+<td class="font" style="padding-left: 10px; text-align: left; font-size: 16px; line-height: 20px; color:  #686d77; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-weight: normal;">New coverage caps on water heaters, replacement
+refrigerant and kitchen/laundry appliances</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- END ||| -->
+ <!-- ||| START -->
+<table class="w100" width="640" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" style="padding-top: 5px;">
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" >
+<tr>
+<td class="bradius" style="padding-top: 10px; padding-bottom: 10px;">
+<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0" >
+<tr>
+<!-- IMAGE -->
+<td width="25" align="center" style="padding-right: 15px;"><img src="https://image.e.cinchhomeservices.com/lib/fe9215737263007e71/m/1/86bf6663-e736-4f0b-aebe-3f93c04a829a.png" width="25" alt="check" style="display: block; border: 0;" class="resize"/></td>
+<td>
+<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+<!-- HEADLINE -->
+<td class="font" style="padding-left: 10px; text-align: left; font-size: 16px; line-height: 20px; color: #686d77; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-weight: normal;">A newly formatted agreement that’s easier to understand</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- END ||| -->
+
+
+%%[IF Logo ID != "85" AND Contract year == "0" THEN]%% 
+ <!-- ||| START -->
+<table class="w100" width="640" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" style="padding-top: 5px; background-color: #f7f7f7;">
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" >
+<tr>
+<td class="bradius" style="padding-top: 10px; padding-bottom: 10px;">
+<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0" >
+<tr>
+<!-- IMAGE -->
+<td width="25" align="center" style="padding-right: 15px;"><img src="https://image.e.cinchhomeservices.com/lib/fe9215737263007e71/m/1/86bf6663-e736-4f0b-aebe-3f93c04a829a.png" width="25" alt="check" style="display: block; border: 0;" class="resize"/></td>
+<td>
+<table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+<!-- HEADLINE -->
+<td class="font" style="padding-left: 10px; text-align: left; font-size: 16px; line-height: 20px; color: #686d77; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-weight: normal;">Discontinuance of first-year benefits, such as Emergency Lodging Reimbursement</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!-- END ||| -->
+
+%%[ENDIF]%%
+
+%%[
+VAR @PZip 
+SET @PZip = [Property ZIP]
+SET @lengthPZip = Length(@PZip)
+
+IF @lengthPZip == "4" THEN
+
+SET @PropertyZip = Concat("0", @PZip)
+ELSE
+SET @PropertyZip = @PZip
+ENDIF
+]%% 
+
+%%[
+SET @TELCinch = "tel://1-888-488-9624"
+SET @TFNCinch = concat('tel:+1','888-488-9624')
+SET @TELLF = "tel://1-877-710-5095"
+SET @TFNLF = concat('tel:+1','877-710-5095')
+SET @TELW = "tel://1-866-439-7768"
+SET @TFNW = concat('tel:+1','866-439-7768')
+
+VAR @RenewURL_Default
+SET @RenewURL_Default = "https://enroll.cinchhomeservices.com/renewal/"
+SET @RenewURL_Default = CONCAT(@RenewURL_Default, "?pl_logo=%%Logo ID%%&utm_content=%%Logo ID%%&contractNumber=%%Contract number%%&zipCode=%%=v(@PropertyZip)=%%")
+
+SET @RenewURL_Default1 = "https://enroll.cinchhomeservices.com/renewal/?pl_logo=8&utm_content=%%Logo ID%%&contractNumber=%%Contract number%%&zipCode=%%=v(@PropertyZip)=%%"
+]%%
+
+
+%%[IF Logo ID == "85" THEN]%% 
+<table role="presentation" width="640" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
+<tr>
+  <td class="font" style="padding-top: 20px; padding-bottom: 5px; padding-left: 140px; padding-right: 140px; text-align: center; font-size: 24px; line-height: 28px; color: #727272; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-weight: bold;">Make sure your home and budget stay protected.</td>
+    </tr>
+     <tr>
+       <td class="font" style="padding-top: 5px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px; text-align: center; font-size: 24px; line-height: 28px; color: #727272; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-weight: bold;"><a href="%%=redirectto(@RenewURL_Default)=%%" alias="renew_here_txt" style="color: #28CD50; text-decoration: underline;">Click</a> or call <a href="tel:+18777105095" style="color: #28CD50;">(877) 710-5095</a></td>
+    </tr> 
+</table>
+
+%%[ELSEIF Logo ID == "66" AND Contract year == "0" THEN]%% 
+<table role="presentation" width="640" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
+<tr>
+  <td class="font" style="padding-top: 20px; padding-bottom: 5px; padding-left: 140px; padding-right: 140px; text-align: center; font-size: 24px; line-height: 28px; color: #727272; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-weight: bold;">Make sure your home and budget stay protected.</td>
+    </tr>
+    <tr>
+       <td class="font" style="padding-top: 10px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px; text-align: center; font-size: 24px; line-height: 28px; color: #727272; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-weight: bold;"><a href="%%=redirectto(@RenewURL_Default)=%%" alias="renew_here_txt" style="color: #28CD50; text-decoration: underline;">Click</a> or call <a href="tel:+18664397768" style="color: #28CD50;">(866) 439-7768</a></td>
+    </tr> 
+</table>
+
+%%[ELSE]%%
+
+<table role="presentation" width="640" border="0" align="center" cellpadding="0" cellspacing="0" class="w100m">
+<tr>
+  <td class="font" style="padding-top: 20px; padding-bottom: 5px; padding-left: 140px; padding-right: 140px; text-align: center; font-size: 24px; line-height: 28px; color: #727272; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-weight: bold;">Make sure your home and budget stay protected.</td>
+    </tr>
+     <tr>
+       <td class="font" style="padding-top: 5px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px; text-align: center; font-size: 24px; line-height: 28px; color: #727272; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-weight: bold;"><a href="%%=redirectto(@RenewURL_Default1)=%%" alias="renew_here_txt" style="color: #28CD50; text-decoration: underline;">Click</a> or call <a href="tel:+18884889624" style="color: #28CD50;">(888) 488-9624</a></td>
+    </tr> 
+</table>
+%%[ENDIF]%%
+<!-- NOT PRESENT FOR T1-Y1 - The logic below drives if customer has placed service orders -->
+<!-- The logic below drives logo at the bottom -->
+%%[IF Logo ID == "66" AND Contract year == "0" THEN]%%
+<table role="presentation" width="100%" role="presentation" cellpadding="0" cellspacing="0" border="0" align="center">
+        <tr>
+            <td style="padding-top: 10px; padding-bottom: 30px;" align="center">
+               <img src="https://image.e.cinchhomeservices.com/lib/fe9215737263007e71/m/2/e16e9ff4-fa84-4c1c-abfb-c3e3d0dd3ff0.png" alt="Weichert Home Protection Plan | Powered by Cinch Home Services icon" height="auto" width="230" style="display: block; padding: 0px; height: auto; width: 220px; border: 0px;">
+            </td>
+        </tr>
+</table>
+%%[ELSE]%%
+<table role="presentation" width="100%" role="presentation" cellpadding="0" cellspacing="0" border="0" align="center">
+        <tr>
+            <td style="padding-top: 10px; padding-bottom: 30px;" align="center">
+               <img src="https://image.s4.sfmc-content.com/lib/fe8f15737263007f7d/m/1/55b3bc21-f99a-4cc3-a9e8-91f4a9f543c8.png" alt="Cinch Home Services icon" height="auto" width="170" style="display: block; padding: 0px; height: auto; width: 180px; border: 0px;">
+            </td>
+        </tr>
+</table> 
+%%[ENDIF]%%
+
+<table class="w100" width="640" border="0" align="center" cellpadding="0" cellspacing="0" style="background-color: #28CD50;" role="presentation" bgcolor="#28CD50">
+<tr>
+  <!-- HEADLINE -->
+  <td class="font" bgcolor="#28CD50" style="padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px; text-align: center; color: #FFFFFF; font-size: 16px; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-weight: bold; line-height: 20px; text-transform: uppercase;">BE PREPARED WITH PEACE-OF-MIND COVERAGE</td>
+</tr>
+</table>  
+<table class="w100" width="640" border="0" align="center" cellpadding="0" cellspacing="0" style="background-color: #28CD50;">
+<tr>
+<td valign="top">
+
+<table class="column33" width="212" border="0" align="left" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #28CD50; border-collapse: collapse;">
+<tr>
+<td style="padding-top: 10px;">
+<table class="w100m" width="95%" border="0" align="left" cellpadding="0" cellspacing="0" >
+<tr>
+<td class="radius" align="center" style="padding-bottom: 15px;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" class="linkopacity" style="background-color: #28CD50; border-collapse: collapse;">
+<tr>
+
+<!-- IMAGE -->
+<td align="center" bgcolor="#28CD50"><img src="https://image.e.cinchhomeservices.com/lib/fe9215737263007e71/m/1/75a528c8-7be6-4f7b-8269-5e25bacb0293.png" width="40" alt="money icon" style="display: block; border: 0; max-width: 100%;" class="tcenterm"/></td>
+</tr>
+<tr>
+<!-- HEADLINE -->
+<td class="font" bgcolor="#28CD50" style="padding-top: 30px; padding-left: 15px; padding-right: 15px; text-align: center; color: #FFFFFF; font-size: 14px; line-height: 16px; font-weight: bold; font-family: 'Mark OT', Arial, Helvetica, sans-serif;">Budget protection for repairs and replacements<!--[if true]><br><br>&nbsp; <![endif]--></td>
+</tr>
+ <!--[if gt mso 16]>
+<tr><td style="height:0.1pt">
+&nbsp;
+</td></tr>
+<![endif]--> 
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<!--[if mso]></td><td valign="top"><![endif]-->
+
+<table class="column33" width="212" border="0" align="left" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #28CD50; border-collapse: collapse;">
+<tr>
+<td align="center" style="padding-top: 10px;">
+<table class="w100m" width="95%" border="0" align="center" cellpadding="0" cellspacing="0" >
+<tr>
+<td class="radius" align="center" style="padding-bottom: 15px;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation" class="linkopacity" style="background-color: #28CD50; border-collapse: collapse;">
+<tr>
+
+<!-- IMAGE -->
+<td align="center" bgcolor="#28CD50"><img src="https://image.e.cinchhomeservices.com/lib/fe9215737263007e71/m/1/0687031e-dfc6-4a5e-8880-f5eccc7549a2.png" width="40" alt="calendar icon representing 180 days" style="display: block; border: 0; max-width: 100%;" class="tcenterm"/></td>
+</tr>
+<tr>
+<!-- HEADLINE -->
+<td class="font" bgcolor="#28CD50" style="padding-top: 18px; padding-left: 15px; padding-right: 15px; text-align: center; color: #FFFFFF; font-size: 14px; line-height: 16px; font-weight: bold; font-family: 'Mark OT', Arial, Helvetica, sans-serif;">Covered work guaranteed for 180 days</td>
+</tr>
+
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<!--[if mso]></td><td valign="top"><![endif]-->
+
+<table class="column33" width="212" border="0" align="left" cellpadding="0" cellspacing="0" role="presentation" style="background-color: #28CD50; border-collapse: collapse;">
+<tr>
+<td align="right" style="padding-top: 10px;">
+<table class="w100m" width="95%" border="0" align="right" cellpadding="0" cellspacing="0" >
+<tr>
+<td class="radius" align="center" style="padding-bottom: 15px;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0"  role="presentation" class="linkopacity" style="background-color: #28CD50; border-collapse: collapse;">
+<tr>
+
+<!-- IMAGE -->
+<td align="center" bgcolor="#28CD50"><img src="https://image.e.cinchhomeservices.com/lib/fe9215737263007e71/m/2/2c4202d6-49bc-4333-a051-869221157bfa.png" width="45" alt="service professionals - people icons" style="display: block; border: 0; max-width: 100%;" class="tcenterm"/></td>
+</tr>
+<tr>
+<!-- HEADLINE -->
+<td class="font" bgcolor="#28CD50" style="padding-top: 27px; padding-left: 15px; padding-right: 15px; text-align: center; color: #FFFFFF; font-size: 14px; line-height: 16px; font-weight: bold; font-family: 'Mark OT', Arial, Helvetica, sans-serif;">Access to thousands of service pros — experienced, trusted and ready to help</td>
+</tr>
+
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td align="center" style="border-top: 3px solid #FFFFFF;"></td></tr>
+</table>
