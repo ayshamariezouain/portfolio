@@ -6,10 +6,12 @@
 <!--[if !mso><!-- -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <!--<![endif-->
-<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;" name="viewport">
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=yes;" name="viewport">
 <meta name="viewport" content="width=device-width">
 <meta name="robots" content="noindex, no follow">
 <meta name="x-apple-disable-message-reformatting">
+<meta name="author" content="Cinch - template edit by amz2024"> 
+<!--Who did this? Now you know! -->
 
 <style type="text/css">
 .ExternalClass { width:100%; }
