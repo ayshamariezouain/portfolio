@@ -10,15 +10,13 @@
    <table role="presentation" width="640" border="0" align="center" cellpadding="0" cellspacing="0" class="w100">
 <tr>
   <td class="font" style="padding-top: 0px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px; text-align: center; font-size: 26px; line-height: 34px; color: #28CD50; font-family: 'Mark OT', Arial, Helvetica, sans-serif; font-weight: normal;">YOUR COVERAGE FOR <span style="color: #686d77;">%%Property Street Address%%, %%Property City%%, %%Property State%%, %%[
-var @PZip 
-set @PZip = [Property ZIP]
-set @lengthPZip = Length(@PZip)
-
+VAR @PZip 
+SET @PZip = [Property ZIP]
+SET @lengthPZip = Length(@PZip)
 IF @lengthPZip == "4" THEN
-
-set @PropertyZip = Concat("0", @PZip)
+SET @PropertyZip = Concat("0", @PZip)
 ELSE
-set @PropertyZip = @PZip
+SET @PropertyZip = @PZip
 ENDIF
 ]%% 
 %%=v(@PropertyZip)=%%</span>.</td>
@@ -35,22 +33,19 @@ ENDIF
 </table>
 <!-- ||| URL is driven by Logo ID ||| -->
 %%[
-var @PZip 
-set @PZip = [Property ZIP]
-set @lengthPZip = Length(@PZip)
-
+VAR @PZip 
+SET @PZip = [Property ZIP]
+SET @lengthPZip = Length(@PZip)
 IF @lengthPZip == "4" THEN
-
-set @PropertyZip = Concat("0", @PZip)
+SET @PropertyZip = Concat("0", @PZip)
 ELSE
-set @PropertyZip = @PZip
+SET @PropertyZip = @PZip
 ENDIF
 ]%% 
 
 %%[
 SET @TPCinch = "(888) 488-9624"
 SET @TPLF = "(877) 710-5095"
-
 SET @TELCinch = "tel://1-888-488-9624"
 SET @TFNCinch = concat('tel:+1','888-488-9624')
 SET @TELLF = "tel://1-877-710-5095"
@@ -85,7 +80,6 @@ SET @RenewURL_Default1 = "https://enroll.cinchhomeservices.com/renewal/?pl_logo=
 %%[ENDIF]%%
 </table>
 <!-- ||| END SAMPLE CONTRACT -->
-
 %%[IF Logo ID == "85" THEN]%% 
 <!-- ||| BUTTON START -->
 <table width="640" border="0" align="center" cellpadding="0" cellspacing="0" class="w100">
@@ -97,8 +91,7 @@ SET @RenewURL_Default1 = "https://enroll.cinchhomeservices.com/renewal/?pl_logo=
 <td class="font bradius" align="center" style="background-color: #686d77; padding-top: 10px; padding-bottom: 10px; padding-left: 75px; padding-right: 75px; font-size: 15px; color: #FFFFFF; font-family: 'Mark OT', Arial, Helvetica, sans-serif; text-align: center; font-weight: bold;"><a href="%%=redirectto(@RenewURL_Default)=%%" alias="renew_here_txt" style="color: #FFFFFF; text-decoration: none; text-transform: uppercase;"><span style="display: block; width: 100%;">Renew here</span></a></td>
 </tr><!-- BUTTON END ||| -->
 </table>
-
-    %%[ELSEIF Logo ID == "66" AND Contract year == "0" THEN]%% 
+%%[ELSEIF Logo ID == "66" AND Contract year == "0" THEN]%% 
 <!-- ||| BUTTON START -->
 <table width="640" border="0" align="center" cellpadding="0" cellspacing="0" class="w100">
 <tr>
@@ -120,11 +113,7 @@ SET @RenewURL_Default1 = "https://enroll.cinchhomeservices.com/renewal/?pl_logo=
 <td class="font bradius" align="center" style="background-color: #686d77; padding-top: 10px; padding-bottom: 10px; padding-left: 75px; padding-right: 75px; font-size: 15px; color: #FFFFFF; font-family: 'Mark OT', Arial, Helvetica, sans-serif; text-align: center; font-weight: bold;"><a href="%%=redirectto(@RenewURL_Default1)=%%" alias="renew_here_txt" style="color: #FFFFFF; text-decoration: none; text-transform: uppercase;"><span style="display: block; width: 100%;">Renew here</span></a></td>
 </tr><!-- BUTTON END ||| -->
 </table>
-
 %%[ENDIF]%%
-
-
-
 %%[IF Logo ID == "85" THEN]%%  
 <table role="presentation" class="w90" width="640" border="0" align="center" cellpadding="0" cellspacing="0">
 <tr>
@@ -294,7 +283,6 @@ refrigerant and kitchen/laundry appliances</td>
 </tr>
 </table>
 <!-- END ||| -->
-
 
 %%[IF Logo ID != "85" AND Contract year == "0" THEN]%% 
  <!-- ||| START -->
