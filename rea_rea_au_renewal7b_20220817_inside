@@ -23,29 +23,27 @@
 
 <!-- ||| URL is driven by Logo ID ||| -->
 %%[
-var @PZip 
-set @PZip = [Property ZIP]
-set @lengthPZip = Length(@PZip)
+VAR @PZip 
+SET @PZip = [Property ZIP]
+SET @lengthPZip = Length(@PZip)
 
 IF @lengthPZip == "4" THEN
 
-set @PropertyZip = Concat("0", @PZip)
+SET @PropertyZip = Concat("0", @PZip)
 ELSE
-set @PropertyZip = @PZip
+SET @PropertyZip = @PZip
 ENDIF
 ]%% 
 
 %%[
 SET @TPCinch = "(888) 488-9624"
 SET @TPLF = "(877) 710-5095"
-
 SET @TELCinch = "tel://1-888-488-9624"
 SET @TFNCinch = concat('tel:+1','888-488-9624')
 SET @TELLF = "tel://1-877-710-5095"
 SET @TFNLF = concat('tel:+1','877-710-5095')
 SET @TELW = "tel://1-866-439-7768"
 SET @TFNW = concat('tel:+1','866-439-7768')
-
 
 VAR @RenewURL_Default
 SET @RenewURL_Default = "https://enroll.cinchhomeservices.com/renewal/"
