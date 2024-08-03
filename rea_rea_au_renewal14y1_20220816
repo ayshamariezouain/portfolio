@@ -24,22 +24,19 @@
 
 <!-- ||| URL is driven by Logo ID ||| -->
 %%[
-var @PZip 
-set @PZip = [Property ZIP]
-set @lengthPZip = Length(@PZip)
-
+VAR @PZip 
+SET @PZip = [Property ZIP]
+SET @lengthPZip = Length(@PZip)
 IF @lengthPZip == "4" THEN
-
-set @PropertyZip = Concat("0", @PZip)
+SET @PropertyZip = Concat("0", @PZip)
 ELSE
-set @PropertyZip = @PZip
+SET @PropertyZip = @PZip
 ENDIF
 ]%% 
 
 %%[
 SET @TPCinch = "(888) 488-9624"
 SET @TPLF = "(877) 710-5095"
-
 SET @TELCinch = "tel://1-888-488-9624"
 SET @TFNCinch = concat('tel:+1','888-488-9624')
 SET @TELLF = "tel://1-877-710-5095"
@@ -50,7 +47,6 @@ SET @TFNW = concat('tel:+1','866-439-7768')
 VAR @RenewURL_Default
 SET @RenewURL_Default = "https://enroll.cinchhomeservices.com/renewal/"
 SET @RenewURL_Default = CONCAT(@RenewURL_Default, "?pl_logo=%%Logo ID%%&utm_content=%%Logo ID%%&contractNumber=%%Contract number%%&zipCode=%%=v(@PropertyZip)=%%")
-
 SET @RenewURL_Default1 = "https://enroll.cinchhomeservices.com/renewal/?pl_logo=8&utm_content=%%Logo ID%%&contractNumber=%%Contract number%%&zipCode=%%=v(@PropertyZip)=%%"
 ]%%
 <!-- ||| START SAMPLE CONTRACT -->
@@ -110,8 +106,6 @@ SET @RenewURL_Default1 = "https://enroll.cinchhomeservices.com/renewal/?pl_logo=
 </table>
 
 %%[ENDIF]%%
-
-
 
 %%[IF Logo ID == "85" THEN]%%  
 <table role="presentation" class="w90" width="640" border="0" align="center" cellpadding="0" cellspacing="0">
@@ -284,9 +278,8 @@ refrigerant and kitchen/laundry appliances</td>
 </table>
 <!-- END ||| -->
 
-
 %%[IF Logo ID != "85" AND Contract year == "0" THEN]%% 
- <!-- ||| START -->
+<!-- ||| START -->
 <table class="w100" width="640" border="0" align="center" cellpadding="0" cellspacing="0">
 <tr>
 <td align="center" style="padding-top: 5px; background-color: #f7f7f7;">
@@ -375,9 +368,7 @@ SET @FormatRenewalDeductible = FormatNumber(@RenewalDeductible,"C2","en-US")
 VAR @PZip 
 SET @PZip = [Property ZIP]
 SET @lengthPZip = Length(@PZip)
-
 IF @lengthPZip == "4" THEN
-
 SET @PropertyZip = Concat("0", @PZip)
 ELSE
 set @PropertyZip = @PZip
